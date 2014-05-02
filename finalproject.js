@@ -20,7 +20,9 @@ if (Meteor.isClient) {
           mapOptions);
 
       crimes = Crimes.find({}).fetch()
+      console.log(crimes)
       for(var i=0;i<crimes.length;i++){
+        console.log(crimes[i])
          var marker = new google.maps.Marker({
           position: new google.maps.LatLng(crimes[i].lat, crimes[i].lng),
           title:'Meine Position',
@@ -39,16 +41,25 @@ if (Meteor.isServer) {
     var data = {};
     data = JSON.parse(Assets.getText("data.json"));
     //console.log(data["data"][0])
-    numpoints=data["data"].length
+    numpoints=100//data["data"].length
 
     for(var i=0;i<numpoints;i++){
       row=data["data"][i]
 
-      crimeId= Crimes.insert({
-        'type': row[9],
-        'lat': row[18],
-        'lng': row[17],
-      })
+      //console.log(row[9],row[18],row[17])
+      exists = Crimes.find({num:row[0]}).fetch()
+      if(exists.length){
+        // do nothing
+      }else{
+        crimeId= Crimes.insert({
+          'num':row[0],
+          'type': row[9],
+          'lat': row[18],
+          'lng': row[17],
+        })
+      }
+
+      //console.log(crimeId)
     }
 
     // code to run on server at startup
