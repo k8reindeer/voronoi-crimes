@@ -2,19 +2,37 @@
   <title>finalproject</title>
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	<script type="text/javascript"
-	  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDysWdECiSDcr5TxZFvm7iT9lE_JpCQ8-E&sensor=true">
+	  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDysWdECiSDcr5TxZFvm7iT9lE_JpCQ8-E&sensor=true&libraries=geometry">
 	</script>
 <!-- 	// <script type="text/javascript" src="/client/lib/rhill-voronoi-core.js"></script> -->
 
 </head>
 
 <body>
-	<h1>6.850 final project</h1>
   {{> map}}
 </body>
 
 <template name="map">
-	<div class="voronoi">Do Map</div>
+	<div id="options">
+	<div id="cityselection">
+		<input type="radio" name="city" value="baltimore">Baltimore<br>
+		<input type="radio" name="city" value="chicago">Chicago<br>
+		<input type="radio" name="city" value="sanfran">San Francisco<br>
+		<input type="radio" name="city" value="somerville">Somerville<br>
+	</div>
+	<div id="samplesize">
+	Sample Size:
+	<input type="text" name="samplesize" size="5"> <div id="max"></div>
+	</div>
+	<div id="displaydiagram">
+		Display Voronoi Diagram?
+		<input type="checkbox" name="displayvoronoi" checked>
+	</div>
+	<div id="rerolldiv">
+		<button id="reroll"> Re-roll</button>
+	</div>
+	</div>
+
     <div id="map-canvas"></div>
 </template>
 

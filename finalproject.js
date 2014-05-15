@@ -1,3 +1,137 @@
+// Copyright 2001, softSurfer (www.softsurfer.com)
+// This code may be freely used and modified for any purpose
+// providing that this copyright notice is included with it.
+// SoftSurfer makes no warranty for this code, and cannot be held
+// liable for any real or imagined damage resulting from its use.
+// Users of this code must verify correctness for their application.
+// http://softsurfer.com/Archive/algorithm_0203/algorithm_0203.htm
+// Assume that a class is already given for the object:
+//    Point with coordinates {float x, y;}
+//===================================================================
+
+// isLeft(): tests if a point is Left|On|Right of an infinite line.
+//    Input:  three points P0, P1, and P2
+//    Return: >0 for P2 left of the line through P0 and P1
+//            =0 for P2 on the line
+//            <0 for P2 right of the line
+
+function sortPointX(a, b) {
+    return a.lng() - b.lng();
+}
+function sortPointY(a, b) {
+    return a.lat() - b.lat();
+}
+
+function isLeft(P0, P1, P2) {    
+    return (P1.lng() - P0.lng()) * (P2.lat() - P0.lat()) - (P2.lng() - P0.lng()) * (P1.lat() - P0.lat());
+}
+//===================================================================
+
+// chainHull_2D(): A.M. Andrew's monotone chain 2D convex hull algorithm
+// http://softsurfer.com/Archive/algorithm_0109/algorithm_0109.htm
+// 
+//     Input:  P[] = an array of 2D points 
+//                   presorted by increasing x- and y-coordinates
+//             n = the number of points in P[]
+//     Output: H[] = an array of the convex hull vertices (max is n)
+//     Return: the number of points in H[]
+
+
+function chainHull_2D(P, n, H) {
+    // the output array H[] will be used as the stack
+    var bot = 0,
+    top = (-1); // indices for bottom and top of the stack
+    var i; // array scan index
+    // Get the indices of points with min x-coord and min|max y-coord
+    var minmin = 0,
+        minmax;
+        
+    var xmin = P[0].lng();
+    for (i = 1; i < n; i++) {
+        if (P[i].lng() != xmin) {
+            break;
+        }
+    }
+    
+    minmax = i - 1;
+    if (minmax == n - 1) { // degenerate case: all x-coords == xmin 
+        H[++top] = P[minmin];
+        if (P[minmax].lat() != P[minmin].lat()) // a nontrivial segment
+            H[++top] = P[minmax];
+        H[++top] = P[minmin]; // add polygon endpoint
+        return top + 1;
+    }
+
+    // Get the indices of points with max x-coord and min|max y-coord
+    var maxmin, maxmax = n - 1;
+    var xmax = P[n - 1].lng();
+    for (i = n - 2; i >= 0; i--) {
+        if (P[i].lng() != xmax) {
+            break; 
+        }
+    }
+    maxmin = i + 1;
+
+    // Compute the lower hull on the stack H
+    H[++top] = P[minmin]; // push minmin point onto stack
+    i = minmax;
+    while (++i <= maxmin) {
+        // the lower line joins P[minmin] with P[maxmin]
+        if (isLeft(P[minmin], P[maxmin], P[i]) >= 0 && i < maxmin) {
+            continue; // ignore P[i] above or on the lower line
+        }
+        
+        while (top > 0) { // there are at least 2 points on the stack
+            // test if P[i] is left of the line at the stack top
+            if (isLeft(H[top - 1], H[top], P[i]) > 0) {
+                break; // P[i] is a new hull vertex
+            }
+            else {
+                top--; // pop top point off stack
+            }
+        }
+        
+        H[++top] = P[i]; // push P[i] onto stack
+    }
+
+    // Next, compute the upper hull on the stack H above the bottom hull
+    if (maxmax != maxmin) { // if distinct xmax points
+        H[++top] = P[maxmax]; // push maxmax point onto stack
+    }
+    
+    bot = top; // the bottom point of the upper hull stack
+    i = maxmin;
+    while (--i >= minmax) {
+        // the upper line joins P[maxmax] with P[minmax]
+        if (isLeft(P[maxmax], P[minmax], P[i]) >= 0 && i > minmax) {
+            continue; // ignore P[i] below or on the upper line
+        }
+        
+        while (top > bot) { // at least 2 points on the upper stack
+            // test if P[i] is left of the line at the stack top
+            if (isLeft(H[top - 1], H[top], P[i]) > 0) { 
+                break;  // P[i] is a new hull vertex
+            }
+            else {
+                top--; // pop top point off stack
+            }
+        }
+        
+        if (P[i].lng() == H[0].lng() && P[i].lat() == H[0].lat()) {
+            return top + 1; // special case (mgomes)
+        }
+        
+        H[++top] = P[i]; // push P[i] onto stack
+    }
+    
+    if (minmax != minmin) {
+        H[++top] = P[minmin]; // push joining endpoint onto stack
+    }
+    
+    return top + 1;
+}
+
+
 /*!
 Copyright (C) 2010-2013 Raymond Hill
 MIT License: See https://github.com/gorhill/Javascript-Voronoi/LICENSE.md
@@ -1627,7 +1761,13 @@ Voronoi.prototype.compute = function(sites, bbox) {
         }
 
     // Initialize site event queue
-    var siteEvents = sites.slice(0);
+    // Initialize site event queue
+    var ε = this.EPSILON;
+    var siteEvents = sites.map(function(site) {
+        site.x = Math.floor(site.x / ε) * ε;
+        site.y = Math.floor(site.y / ε) * ε;
+        return site;
+        });
     siteEvents.sort(function(a,b){
         var r = b.y - a.y;
         if (r) {return r;}
@@ -1716,58 +1856,209 @@ if (Meteor.isClient) {
   //       console.log("You pressed the button");
   //   }
   // });
-  Template.map.events({
-    'click .voronoi': function(){
+
+  var distance = function(a,b){
+    return Math.sqrt((a.x-b.x)*(a.x-b.x) + (a.y-b.y)*(a.y-b.y))
+  }
+
+  var closestPoint = function(listOfPoints,point){
+    winner=null
+    dist=null
+    for(var i=0;i<listOfPoints.length;i++){
+      thisPoint=listOfPoints[i]
+      thisDistance=distance(thisPoint,point)
+      if(dist==null || dist>thisDistance){
+        dist=thisDistance
+        winner=thisPoint
+      }
+    }
+    //console.log(dist)
+    return {point: winner, distance: dist}
+  }
+
+  var largestOpenCircle = function(crimes, vorVerts){
+    var winner=null
+    var dist=null
+    var prover=null
+    for(var i=0;i<vorVerts.length;i++){
+      closest=closestPoint(crimes,vorVerts[i])
+      if(!dist || dist<closest.distance){
+        dist=closest.distance
+        winner=vorVerts[i]
+        prover = closest.point
+      }
+    }
+    //console.log(winner,dist)
+    return {point: winner, distance: dist, prover: prover}
+  }
+
+  var withinBox = function(thisPoint,bbox){
+    return thisPoint.x>bbox.xl && thisPoint.x<bbox.xr && thisPoint.y>bbox.yt && thisPoint.y<bbox.yb
+  }
+
+  var onBbox = function(va,vb,bbox){
+    return (va.x==bbox.xl && vb.x == bbox.xl) || 
+        (va.x==bbox.xr && vb.x == bbox.xr) ||
+        (va.y==bbox.yt && vb.y == bbox.yt) ||
+        (va.y==bbox.yb && vb.y == bbox.yb)
+  }
+
+  var random_sample = function(inlist,size){
+    // returns a randomly selected subset of the list, of about a certain size
+    if(size>inlist.length){
+        return inlist
+    }
+    output=[]
+    startIndex=Math.floor(Math.random()*(inlist.length-size))
+    return inlist.slice(startIndex,startIndex+size)
+  }
+
+  var drawMap = function(){
+    thisCity=$('input[name=city]:checked').val()
+      sampleSize=parseInt($("input[name=samplesize]").val())
+      if(!sampleSize){
+        sampleSize=100
+      }
+      //console.log(thisCity)
+
       var mapOptions = {
         center: new google.maps.LatLng(37.759, -122.442),
-        zoom: 12
+        zoom: 1
       };
       var map = new google.maps.Map(document.getElementById("map-canvas"),
           mapOptions);
 
-      crimes = Crimes.find({}).fetch()
+      // get a random sample of 100 different crimes
+
+      allcrimes = Crimes.find({city:thisCity}).fetch()
+      crimes = random_sample(allcrimes,sampleSize)
       var positions=[]
+      var inputlatlngs=[]
       for(var i=0;i<crimes.length;i++){
         //console.log(crimes[i])
         //console.log("x:"+crimes[i].lng+" y:"+crimes[i].lat)
         positions.push({x:parseFloat(crimes[i].lng),y:parseFloat(crimes[i].lat)})
+        inputlatlngs.push(new google.maps.LatLng(crimes[i].lat, crimes[i].lng))
         var marker = new google.maps.Marker({
           position: new google.maps.LatLng(crimes[i].lat, crimes[i].lng),
-          title:'Meine Position',
           icon:'https://storage.googleapis.com/support-kms-prod/SNP_2752125_en_v0'
         });
         marker.setMap(map); 
       }
-      console.log(positions[0], positions.length)
-      var bbox = {xl:-122.543125, xr:-122.340908, yt:37.695971, yb:37.836286};
-      // var marker = new google.maps.Marker({
-      //   position: new google.maps.LatLng(37.645971, -122.543125),
-      //   icon:'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
-      // });
-      // marker.setMap(map); 
-      // var marker2 = new google.maps.Marker({
-      //   position: new google.maps.LatLng(37.836286, -122.350908),
-      //   icon:'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
-      // });
-      // marker2.setMap(map); 
-      voronoi = new Voronoi()
-      console.log(positions[0])
-      voronoi.quantizeSites(positions)
-      console.log(positions[0])
-      results = voronoi.compute(positions,bbox)
-      console.log(results)
-      for(var i=0;i<results.edges.length;i++){
-        va=results.edges[i].va
-        vb=results.edges[i].vb
-        var edge = new google.maps.Polyline({
-          path: [new google.maps.LatLng(va.y,va.x), new google.maps.LatLng(vb.y,vb.x)],
-          geodesic: true,
-          strokeColor: '#FF0000',
-          strokeOpacity: 1.0,
-          strokeWeight: 1
-        });
-        edge.setMap(map); 
+      console.log(positions.length)
+      var limits = new google.maps.LatLngBounds();
+      for(var i=0;i<inputlatlngs.length;i++){
+        limits.extend(inputlatlngs[i]);
       }
+      //console.log("limits: "+limits.getSouthWest().lng())
+      map.fitBounds(limits);
+
+      var bbox = {
+        xl:limits.getSouthWest().lng()-.1, 
+        xr:limits.getNorthEast().lng()+.1, 
+        yt:limits.getSouthWest().lat()-.1, 
+        yb:limits.getNorthEast().lat()+.1
+      };
+      voronoi = new Voronoi()
+      voronoi.quantizeSites(positions)
+      results = voronoi.compute(positions,bbox)
+      // should we draw the voronoi diagram? 
+      if($('input:checkbox[name=displayvoronoi]:checked').length>0){
+        for(var i=0;i<results.edges.length;i++){
+            va=results.edges[i].va
+            vb=results.edges[i].vb
+            // only show edge if it is not on bounding box
+            if(!onBbox(va,vb,bbox)){
+                var edge = new google.maps.Polyline({
+                  path: [new google.maps.LatLng(va.y,va.x), new google.maps.LatLng(vb.y,vb.x)],
+                  geodesic: true,
+                  strokeColor: '#FF0000',
+                  strokeOpacity: 1.0,
+                  strokeWeight: 1
+                });
+                edge.setMap(map); 
+            }
+
+          }
+      }
+
+
+      // find the convex hull of the input points (i.e. positions)
+      var points = inputlatlngs;
+      var hullPoints = [];
+      var hullPoints_size;
+
+      // Sort the points by X, then by Y (required by the algorithm)
+      points.sort(sortPointY);
+      points.sort(sortPointX);
+      // Calculate the convex hull
+      // Takes: an (1) array of points with x() and y() methods defined
+      //          (2) Size of the points array
+      //          (3) Empty array to store the hull points
+      // Returns: The number of hull points, which may differ the the hull points array’s size
+      hullPoints_size = chainHull_2D(points, points.length, hullPoints);
+      hullPoints_mod=[]
+      for(var i=0;i<hullPoints.length;i++){
+        hullPoints_mod.push(new google.maps.LatLng(hullPoints[i].k,hullPoints[i].A))
+      }
+      //make the convex hull into a google maps polygon
+      convexhull = new google.maps.Polygon({
+        paths: hullPoints_mod,
+        strokeColor: '#FF0000',
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: '#FF0000',
+        fillOpacity: 0.35
+      });
+      //convexhull.setMap(map)
+
+      // now find the largest open circle
+      var candidatePoints=[]
+      for(var i=0;i<results.vertices.length;i++){
+        var thispoint=results.vertices[i]
+        // check whether the points are within the convex hull of the input points
+        if(google.maps.geometry.poly.containsLocation(new google.maps.LatLng(thispoint.y,thispoint.x),convexhull)){
+          candidatePoints.push(thispoint)
+        }
+      }
+
+      var LEC = largestOpenCircle(positions,candidatePoints)
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(LEC.point.y, LEC.point.x),
+        icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+      });
+      marker.setMap(map); 
+      circleRadius = google.maps.geometry.spherical.computeDistanceBetween(
+        new google.maps.LatLng(LEC.point.y,LEC.point.x),
+        new google.maps.LatLng(LEC.prover.y,LEC.prover.x))
+      LECircle = new google.maps.Circle({
+        strokeColor: '#0000FF',
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: '#0000FF',
+        fillOpacity: 0.35,
+        center: new google.maps.LatLng(LEC.point.y,LEC.point.x),
+        radius: 100000*LEC.distance
+      });
+      LECircle.setMap(map)
+
+  }
+
+
+  Template.map.events({
+    'change input:radio': function(e){
+        // get the max size for this dataset
+        thisCity=$('input[name=city]:checked').val()
+        size= Crimes.find({'city':thisCity}).count()
+        $("#max").text("(max "+size+")")
+        drawMap()
+
+    },
+    'change input:checkbox': function(e){
+        drawMap()
+    },
+    'click #reroll':function(e){
+        drawMap()
     }
   })
 
@@ -1809,35 +2100,142 @@ if (Meteor.isClient) {
 
 }
 
+
+
 if (Meteor.isServer) {
   Meteor.startup(function () {
 
-
-    var data = {};
-    data = JSON.parse(Assets.getText("data.json"));
+    // import SF data
+    var SFdata = {};
+    SFdata = JSON.parse(Assets.getText("data.json"));
+        console.log(SFdata["data"].length,Crimes.find({'city':"sanfran"}).count())
     //console.log(data["data"][0])
-    numpoints=100//data["data"].length
+    if(Crimes.find({'city':"sanfran"}).count() >= SFdata["data"].length){
+        //we're done, yay!
+        console.log("skipped importing SF")
+    }else{
+        for(var i=0;i<SFdata["data"].length;i++){
+          row=SFdata["data"][i]
 
+          exists = Crimes.find({num:i,'city':"sanfran"}).fetch()
+          if(exists.length){
+            // do nothing
+          }else{
+            crimeId= Crimes.insert({
+              'num':i,
+              'type': row[9],
+              'lat': parseFloat(row[18]),
+              'lng': parseFloat(row[17]),
+              'city':"sanfran"
+            })
+          }
+        }
+    }
+
+
+    var baltimoredata={}
+    baltimoredata=JSON.parse(Assets.getText("baltimore.json"));
+        console.log(baltimoredata["data"].length, Crimes.find({'city':"baltimore"}).count())
+    if(Crimes.find({'city':"baltimore"}).count() >= baltimoredata["data"].length){
+        //we're done, yay!
+        console.log("skipped importing baltimore")
+    }else{
+        for(var i=0;i<baltimoredata["data"].length;i++){
+            //console.log(i)
+          row=baltimoredata["data"][i]
+          exists = Crimes.find({num:i,'city':"baltimore"}).fetch()
+          if(exists.length){
+            //console.log("exists")
+            // do nothing
+          }else{
+            crimeId= Crimes.insert({
+              'num':i,
+              'type': row[9],
+              'lat': parseFloat(row[18][1]),
+              'lng': parseFloat(row[18][2]),
+              'city':"baltimore"
+            })
+          }
+        }
+    }
+
+
+    var chicagodata={}
+    chicagodata=JSON.parse(Assets.getText("chicago.json"))
+        console.log(chicagodata["data"].length,Crimes.find({'city':"chicago"}).count())
+    if(Crimes.find({'city':"chicago"}).count() >= chicagodata["data"].length){
+        //we're done, yay!
+        console.log("skipped importing chicago")
+    }else{
+        for(var i=0;i<chicagodata["data"].length;i++){
+          row=chicagodata["data"][i]
+          exists = Crimes.find({num:i,'city':"chicago"}).fetch()
+          if(exists.length){
+            // do nothing
+          }else{
+            crimeId= Crimes.insert({
+              'num':i,
+              'type': row[9],
+              'lat': parseFloat(row[22]),
+              'lng': parseFloat(row[23]),
+              'city':"chicago"
+            })
+          }
+        }
+    }
+
+    var somervilledata={}
+    somervilledata=JSON.parse(Assets.getText("somerville.json"))
+        console.log(somervilledata["data"].length, Crimes.find({'city':"somerville"}).count())
+    if(Crimes.find({'city':"somerville"}).count() >= somervilledata["data"].length){
+        //we're done, yay!
+        console.log("skipped importing somerville")
+    }else{
+        for(var i=0;i<somervilledata["data"].length;i++){
+          row=somervilledata["data"][i]
+          exists = Crimes.find({num:i,'city':"somerville"}).fetch()
+          if(exists.length){
+            // do nothing
+          }else{
+            crimeId= Crimes.insert({
+              'num':i,
+              'type': row[9],
+              'lat': parseFloat(row[12][1]),
+              'lng': parseFloat(row[12][2]),
+              'city':"somerville"
+            })
+          }
+        }
+    }
+
+
+
+
+    // code to run on server at startup
+  });
+
+  var importData = function(data,cityname,latindex,longindex,numpoints){
+    if(!numpoints){
+      numpoints=data["data"].length
+    }
     for(var i=0;i<numpoints;i++){
       row=data["data"][i]
 
-      //console.log(row[9],row[18],row[17])
-      exists = Crimes.find({num:row[0]}).fetch()
+      exists = Crimes.find({num:row[0],'city':cityname}).fetch()
       if(exists.length){
         // do nothing
       }else{
         crimeId= Crimes.insert({
           'num':row[0],
           'type': row[9],
-          'lat': parseFloat(row[18]),
-          'lng': parseFloat(row[17]),
+          'lat': parseFloat(row[latindex]),
+          'lng': parseFloat(row[longindex]),
+          'city':cityname
         })
       }
 
       //console.log(crimeId)
     }
-
-    // code to run on server at startup
-  });
+  }
 
 }

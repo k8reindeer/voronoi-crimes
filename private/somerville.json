@@ -1,0 +1,845 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "zzzz-zzzz",
+      "name" : "Rodent Information",
+      "averageRating" : 0,
+      "description" : "Map of Somerville showing reported rodent sightings throughout  the years 2009, 2010, 2011 and 2012.",
+      "displayType" : "map",
+      "modifyingViewUid" : "tp6j-gpfj",
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 0,
+      "publicationAppendEnabled" : false,
+      "publicationStage" : "unpublished",
+      "rowsUpdatedAt" : 1345053494,
+      "rowsUpdatedBy" : "ta4g-utcf",
+      "tableId" : 404186,
+      "totalTimesRated" : 0,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : 15746093,
+        "name" : "Date",
+        "dataTypeName" : "text",
+        "fieldName" : "date",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 3741129,
+        "width" : 148,
+        "format" : {
+        }
+      }, {
+        "id" : 15746094,
+        "name" : "Service Type",
+        "dataTypeName" : "text",
+        "fieldName" : "service_type",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 3741130,
+        "width" : 244,
+        "format" : {
+        }
+      }, {
+        "id" : 15746095,
+        "name" : "Dept",
+        "dataTypeName" : "text",
+        "fieldName" : "dept",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 3741131,
+        "width" : 148,
+        "format" : {
+        }
+      }, {
+        "id" : 15746096,
+        "name" : "Ticket",
+        "dataTypeName" : "text",
+        "fieldName" : "ticket",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 3741132,
+        "width" : 172,
+        "format" : {
+        }
+      }, {
+        "id" : 15746097,
+        "name" : "Location",
+        "dataTypeName" : "location",
+        "fieldName" : "location",
+        "position" : 5,
+        "renderTypeName" : "location",
+        "tableColumnId" : 3741134,
+        "width" : 196,
+        "format" : {
+        },
+        "subColumnTypes" : [ "human_address", "latitude", "longitude", "machine_address", "needs_recoding" ]
+      }, {
+        "id" : 15746098,
+        "name" : "Status",
+        "dataTypeName" : "text",
+        "fieldName" : "status",
+        "position" : 6,
+        "renderTypeName" : "text",
+        "tableColumnId" : 3741135,
+        "width" : 172,
+        "format" : {
+        }
+      }, {
+        "id" : 15746099,
+        "name" : "Zipcode",
+        "dataTypeName" : "number",
+        "fieldName" : "zipcode",
+        "position" : 7,
+        "renderTypeName" : "number",
+        "tableColumnId" : 3741136,
+        "width" : 184,
+        "format" : {
+        }
+      }, {
+        "id" : 15746100,
+        "name" : "Ward",
+        "dataTypeName" : "number",
+        "fieldName" : "ward",
+        "position" : 8,
+        "renderTypeName" : "number",
+        "tableColumnId" : 3741137,
+        "width" : 148,
+        "format" : {
+        }
+      }, {
+        "id" : 15746101,
+        "name" : "Close Date",
+        "dataTypeName" : "text",
+        "fieldName" : "close_date",
+        "position" : 9,
+        "renderTypeName" : "text",
+        "tableColumnId" : 3741138,
+        "width" : 220,
+        "format" : {
+        }
+      }, {
+        "id" : 15746102,
+        "name" : "Location 1",
+        "dataTypeName" : "location",
+        "fieldName" : "location_1",
+        "position" : 10,
+        "renderTypeName" : "location",
+        "tableColumnId" : 3741139,
+        "width" : 220,
+        "format" : {
+        },
+        "subColumnTypes" : [ "human_address", "latitude", "longitude", "machine_address", "needs_recoding" ]
+      } ],
+      "displayFormat" : {
+        "bkgdLayers" : [ {
+          "alias" : "Roadmap",
+          "opacity" : 1,
+          "layerKey" : "Google Roadmap"
+        }, {
+          "alias" : "Satellite",
+          "opacity" : 1,
+          "layerKey" : "Google Satellite"
+        }, {
+          "alias" : "Terrain",
+          "opacity" : 1,
+          "layerKey" : "Google Terrain"
+        } ],
+        "viewport" : {
+          "ymin" : 42.388657,
+          "ymax" : 42.397278,
+          "xmin" : -71.113992,
+          "xmax" : -71.08305
+        },
+        "compositeMembers" : [ "jyc2-yxnj", "vcue-weia", "7g35-yebv" ],
+        "plotStyle" : "point",
+        "distinctLegend" : true,
+        "exclusiveLayers" : true,
+        "viewDefinitions" : [ {
+          "uid" : "self",
+          "viewport" : {
+            "ymin" : 42.388657,
+            "ymax" : 42.397278,
+            "xmin" : -71.113992,
+            "xmax" : -71.08305
+          },
+          "compositeMembers" : [ "jyc2-yxnj", "vcue-weia", "7g35-yebv" ],
+          "plotStyle" : "point",
+          "type" : "google",
+          "plot" : {
+            "locationId" : 3741134
+          }
+        }, {
+          "uid" : "jyc2-yxnj",
+          "plotStyle" : "point",
+          "color" : "#0000ff",
+          "plot" : {
+            "locationId" : 3740756
+          }
+        }, {
+          "uid" : "vcue-weia",
+          "plotStyle" : "point",
+          "color" : "#0000ff",
+          "plot" : {
+            "locationId" : 3740665
+          }
+        }, {
+          "uid" : "7g35-yebv",
+          "plotStyle" : "point",
+          "color" : "#0000ff",
+          "plot" : {
+            "locationId" : 3740590
+          }
+        } ],
+        "type" : "google",
+        "plot" : {
+          "locationId" : 3741134
+        }
+      },
+      "grants" : [ {
+        "inherited" : true,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "metadata" : {
+        "renderTypeConfig" : {
+          "visible" : {
+            "map" : true
+          }
+        },
+        "availableDisplayTypes" : [ "map", "table", "fatrow", "page" ],
+        "jsonQuery" : {
+          "where" : {
+            "children" : [ {
+              "value" : "Health-Rodents-Rats",
+              "operator" : "EQUALS",
+              "columnFieldName" : "service_type",
+              "metadata" : {
+                "freeform" : true,
+                "unifiedVersion" : 2,
+                "tableColumnId" : {
+                  "398927" : 3741130
+                },
+                "operator" : "EQUALS"
+              }
+            }, {
+              "children" : [ {
+                "value" : -71.122961288539,
+                "subColumn" : "LONGITUDE",
+                "operator" : "GREATER_THAN",
+                "columnFieldName" : "location"
+              }, {
+                "value" : -71.07408071146,
+                "subColumn" : "LONGITUDE",
+                "operator" : "LESS_THAN",
+                "columnFieldName" : "location"
+              }, {
+                "value" : 42.383743836891,
+                "subColumn" : "LATITUDE",
+                "operator" : "GREATER_THAN",
+                "columnFieldName" : "location"
+              }, {
+                "value" : 42.402190103783,
+                "subColumn" : "LATITUDE",
+                "operator" : "LESS_THAN",
+                "columnFieldName" : "location"
+              } ],
+              "operator" : "AND"
+            } ],
+            "operator" : "AND"
+          }
+        },
+        "rdfSubject" : "0",
+        "query" : {
+          "7g35-yebv" : {
+            "filterCondition" : {
+              "value" : "AND",
+              "children" : [ {
+                "value" : "OR",
+                "children" : [ {
+                  "value" : "EQUALS",
+                  "children" : [ {
+                    "columnId" : 15744367,
+                    "type" : "column"
+                  }, {
+                    "value" : "Health-Rodents-Rats",
+                    "type" : "literal"
+                  } ],
+                  "type" : "operator",
+                  "metadata" : {
+                    "freeform" : true
+                  }
+                } ],
+                "type" : "operator",
+                "metadata" : {
+                  "tableColumnId" : {
+                    "398887" : 3740586
+                  },
+                  "operator" : "EQUALS"
+                }
+              } ],
+              "type" : "operator",
+              "metadata" : {
+                "unifiedVersion" : 2
+              }
+            }
+          },
+          "jyc2-yxnj" : {
+            "filterCondition" : {
+              "value" : "AND",
+              "children" : [ {
+                "value" : "OR",
+                "children" : [ {
+                  "value" : "EQUALS",
+                  "children" : [ {
+                    "columnId" : 15744062,
+                    "type" : "column"
+                  }, {
+                    "value" : "Health-Rodents-Rats",
+                    "type" : "literal"
+                  } ],
+                  "type" : "operator",
+                  "metadata" : {
+                    "freeform" : true
+                  }
+                } ],
+                "type" : "operator",
+                "metadata" : {
+                  "tableColumnId" : {
+                    "398900" : 3740747
+                  },
+                  "operator" : "EQUALS"
+                }
+              } ],
+              "type" : "operator",
+              "metadata" : {
+                "unifiedVersion" : 2
+              }
+            }
+          }
+        },
+        "conditionalFormatting" : [ {
+          "color" : "#ff0000",
+          "condition" : {
+            "_key" : "(3741129|BETWEEN|2012-01-01T00:00:00,2012-12-31T00:00:00)",
+            "value" : [ "2012-01-01T00:00:00", "2012-12-31T00:00:00" ],
+            "tableColumnId" : 3741129,
+            "operator" : "BETWEEN"
+          },
+          "description" : "Health 2012"
+        } ]
+      },
+      "query" : {
+        "filterCondition" : {
+          "type" : "operator",
+          "value" : "AND",
+          "children" : [ {
+            "type" : "operator",
+            "value" : "OR",
+            "children" : [ {
+              "type" : "operator",
+              "value" : "EQUALS",
+              "children" : [ {
+                "columnId" : 15746094,
+                "type" : "column"
+              }, {
+                "type" : "literal",
+                "value" : "Health-Rodents-Rats"
+              } ],
+              "metadata" : {
+                "freeform" : true
+              }
+            } ],
+            "metadata" : {
+              "tableColumnId" : {
+                "398927" : 3741130
+              },
+              "operator" : "EQUALS"
+            }
+          }, {
+            "type" : "operator",
+            "value" : "AND",
+            "children" : [ {
+              "type" : "operator",
+              "value" : "GREATER_THAN",
+              "children" : [ {
+                "columnId" : 15746097,
+                "type" : "column",
+                "value" : "LONGITUDE"
+              }, {
+                "type" : "literal",
+                "value" : "-71.122961288539"
+              } ]
+            }, {
+              "type" : "operator",
+              "value" : "LESS_THAN",
+              "children" : [ {
+                "columnId" : 15746097,
+                "type" : "column",
+                "value" : "LONGITUDE"
+              }, {
+                "type" : "literal",
+                "value" : "-71.07408071146"
+              } ]
+            }, {
+              "type" : "operator",
+              "value" : "GREATER_THAN",
+              "children" : [ {
+                "columnId" : 15746097,
+                "type" : "column",
+                "value" : "LATITUDE"
+              }, {
+                "type" : "literal",
+                "value" : "42.383743836891"
+              } ]
+            }, {
+              "type" : "operator",
+              "value" : "LESS_THAN",
+              "children" : [ {
+                "columnId" : 15746097,
+                "type" : "column",
+                "value" : "LATITUDE"
+              }, {
+                "type" : "literal",
+                "value" : "42.402190103783"
+              } ]
+            } ]
+          } ],
+          "metadata" : {
+            "unifiedVersion" : 2
+          }
+        }
+      },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "ta4g-utcf",
+        "displayName" : "Steve Craig",
+        "profileImageUrlLarge" : "/images/profile/0879/0237/311_square_large.png",
+        "profileImageUrlMedium" : "/images/profile/0879/0237/311_square_thumb.png",
+        "profileImageUrlSmall" : "/images/profile/0879/0237/311_square_tiny.png",
+        "roleName" : "administrator",
+        "screenName" : "Steve Craig",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards" ]
+      },
+      "viewFilters" : {
+        "type" : "operator",
+        "value" : "AND",
+        "children" : [ {
+          "type" : "operator",
+          "value" : "OR",
+          "children" : [ {
+            "type" : "operator",
+            "value" : "EQUALS",
+            "children" : [ {
+              "columnId" : 15746094,
+              "type" : "column"
+            }, {
+              "type" : "literal",
+              "value" : "Health-Rodents-Rats"
+            } ],
+            "metadata" : {
+              "freeform" : true
+            }
+          } ],
+          "metadata" : {
+            "tableColumnId" : {
+              "398927" : 3741130
+            },
+            "operator" : "EQUALS"
+          }
+        }, {
+          "type" : "operator",
+          "value" : "AND",
+          "children" : [ {
+            "type" : "operator",
+            "value" : "GREATER_THAN",
+            "children" : [ {
+              "columnId" : 15746097,
+              "type" : "column",
+              "value" : "LONGITUDE"
+            }, {
+              "type" : "literal",
+              "value" : "-71.122961288539"
+            } ]
+          }, {
+            "type" : "operator",
+            "value" : "LESS_THAN",
+            "children" : [ {
+              "columnId" : 15746097,
+              "type" : "column",
+              "value" : "LONGITUDE"
+            }, {
+              "type" : "literal",
+              "value" : "-71.07408071146"
+            } ]
+          }, {
+            "type" : "operator",
+            "value" : "GREATER_THAN",
+            "children" : [ {
+              "columnId" : 15746097,
+              "type" : "column",
+              "value" : "LATITUDE"
+            }, {
+              "type" : "literal",
+              "value" : "42.383743836891"
+            } ]
+          }, {
+            "type" : "operator",
+            "value" : "LESS_THAN",
+            "children" : [ {
+              "columnId" : 15746097,
+              "type" : "column",
+              "value" : "LATITUDE"
+            }, {
+              "type" : "literal",
+              "value" : "42.402190103783"
+            } ]
+          } ]
+        } ],
+        "metadata" : {
+          "unifiedVersion" : 2
+        }
+      },
+      "flags" : [ "unsaved" ]
+    }
+  },
+  "data" : [ [ 3, "6FE8F9B3-CF83-476E-B065-7F8D5068BD71", 3, 1344444368, "393811", 1344444456, "393811", "{\n}", "07/25/2012", "Health-Rodents-Rats", "Health", "237110", [ "{\"address\":\"25 LINDEN ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38832330413504", "-71.11366210535078", null, false ], "N", "2143", "2", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 4, "793D1494-08C8-4BD6-A7D8-5BA1DB0D82FC", 4, 1344444368, "393811", 1344444464, "393811", "{\n}", "07/25/2012", "Health-Rodents-Rats", "Health", "237078", [ "{\"address\":\"8 MELVIN ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38975322616159", "-71.0895063156438", null, false ], "N", "2145", "1", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 6, "E66BA8D9-3F2E-4E8A-8051-3D3322FEC5F5", 6, 1344444368, "393811", 1344444543, "393811", "{\n}", "07/25/2012", "Health-Rodents-Rats", "Health", "237030", [ "{\"address\":\"CREST HILL RD &amp; TEN HILLS RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38667999988223", "-71.09825999969905", null, false ], "N", "2145", null, "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 13, "F3217682-B3C0-4119-A8CE-2FCAA3FAFD34", 13, 1344444368, "393811", 1344444556, "393811", "{\n}", "07/23/2012", "Health-Rodents-Rats", "Health", "236825", [ "{\"address\":\"7 MAINE AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38872799904823", "-71.08152033602363", null, false ], "N", "2145", "1", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 15, "F38188F6-B558-4F8B-922A-B297AE2BC97B", 15, 1344444368, "393811", 1344444556, "393811", "{\n}", "07/23/2012", "Health-Rodents-Rats", "Health", "236803", [ "{\"address\":\"26 WISCONSIN AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38883591769172", "-71.08401145804476", null, false ], "N", "2145", "1", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 21, "EAD613AD-E0E1-4D8F-B063-905D678FB38F", 21, 1344444368, "393811", 1344444549, "393811", "{\n}", "07/22/2012", "Health-Rodents-Rats", "Health", "236542", [ "{\"address\":\"71 WALLACE ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39995153797389", "-71.12179197649567", null, false ], "N", "2144", "6", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 24, "73E7162C-78F8-4AC8-B0AB-D7533D5B378C", 24, 1344444368, "393811", 1344444459, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "07/21/2012", "Health-Rodents-Rats", "Health", "236524", [ "{\"address\":\"BEACON ST &amp; MUSEUM ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38667999988223", "-71.09825999969905", null, false ], "N", "2143", null, "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 26, "7FE6AC6E-9D7A-48E1-B5F8-61BF647C2803", 26, 1344444368, "393811", 1344444466, "393811", "{\n}", "07/20/2012", "Health-Rodents-Rats", "Health", "236330", [ "{\"address\":\"0 WINTER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39701021165566", "-71.12204719395463", null, false ], "N", "2144", "6", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 38, "7AC23B18-240D-4017-BE67-1F3AA67C9CDC", 38, 1344444368, "393811", 1344444465, "393811", "{\n}", "07/19/2012", "Health-Rodents-Rats", "Health", "236273", [ "{\"address\":\"14 PARK AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39798202272971", "-71.12269129852496", null, false ], "N", "2144", "6", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 39, "8ACD0F10-6F65-4070-9DFD-14FD924D9FDC", 39, 1344444368, "393811", 1344444475, "393811", "{\n}", "07/19/2012", "Health-Rodents-Rats", "Health", "236275", [ "{\"address\":\"13 WHEELER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38420374870811", "-71.08050405202432", null, false ], "N", "2145", "1", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 40, "BD0B45E3-9BFC-45AA-B6FF-9F2C12CCD15F", 40, 1344444368, "393811", 1344444506, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "07/19/2012", "Health-Rodents-Rats", "Health", "236195", [ "{\"address\":\"MANSFIELD ST &amp; WASHINGTON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38667999988223", "-71.09825999969905", null, false ], "N", "2143", null, "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 41, "1089CF43-7B3F-461A-9099-95C6E0D534A2", 41, 1344444368, "393811", 1344444387, "393811", "{\n}", "07/19/2012", "Health-Rodents-Rats", "Health", "236227", [ "{\"address\":\"38 POWDERHOUSE BLVD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.40204695830215", "-71.11904904430628", null, false ], "N", "2144", "6", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 42, "177D9325-AABE-48AC-BF5A-F9473654BD99", 42, 1344444368, "393811", 1344444391, "393811", "{\n}", "07/19/2012", "Health-Rodents-Rats", "Health", "236248", [ "{\"address\":\"19 TAYLOR ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39495688444429", "-71.08860283096402", null, false ], "N", "2145", "4", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 43, "6D4A0398-6AC1-414D-A2BF-AC675D65B938", 43, 1344444368, "393811", 1344444453, "393811", "{\n}", "07/19/2012", "Health-Rodents-Rats", "Health", "236247", [ "{\"address\":\"48 HIGHLAND RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39628230409431", "-71.11272681044034", null, false ], "N", "2144", "5", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 49, "11A4AEE1-F6CB-40B3-9605-6C4F3ECC52D6", 49, 1344444368, "393811", 1344444387, "393811", "{\n}", "07/18/2012", "Health-Rodents-Rats", "Health", "235679", [ "{\"address\":\"40 ROGERS AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39675894476983", "-71.11331136975934", null, false ], "N", "2144", "5", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 51, "E8E79614-069D-408C-BEDF-5B3A0DBB8075", 51, 1344444368, "393811", 1344444546, "393811", "{\n}", "07/18/2012", "Health-Rodents-Rats", "Health", "235920", [ "{\"address\":\"353 HIGHLAND AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39429480240955", "-71.11714248160416", null, false ], "N", "2144", "6", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 55, "A484FB22-E925-4B5F-83F3-CC90033DC81B", 55, 1344444368, "393811", 1344444489, "393811", "{\n}", "07/17/2012", "Health-Rodents-Rats", "Health", "235375", [ "{\"address\":\"0 PEARSON RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.40058342284005", "-71.11412798985812", null, false ], "N", "2144", "6", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 57, "F75F6677-7BE8-401E-AB7F-4D792F8ACB19", 57, 1344444368, "393811", 1344444556, "393811", "{\n}", "07/17/2012", "Health-Rodents-Rats", "Health", "235379", [ "{\"address\":\"0 KENWOOD ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.40050019085286", "-71.11924245128998", null, false ], "Y", "2144", "6", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 58, "377AD3AE-9A3D-4DA1-9310-F026F7D56C9F", 58, 1344444368, "393811", 1344444413, "393811", "{\n}", "07/17/2012", "Health-Rodents-Rats", "Health", "235417", [ "{\"address\":\"16 MOUNT VERNON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.385535405844166", "-71.07926303773007", null, false ], "N", "2145", "1", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 66, "563361C5-C9E8-4636-AA27-356B4113886D", 66, 1344444368, "393811", 1344444435, "393811", "{\n}", "07/16/2012", "Health-Rodents-Rats", "Health", "235287", [ "{\"address\":\"15 WARNER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.40166924304981", "-71.1157035663573", null, false ], "Y", "2144", "6", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 68, "9EDD9101-2E03-4619-BC1B-6EAEDFA3A763", 68, 1344444368, "393811", 1344444487, "393811", "{\n}", "07/16/2012", "Health-Rodents-Rats", "Health", "235276", [ "{\"address\":\"16 HALL ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.3914619380173", "-71.11381499009576", null, false ], "N", "2144", "5", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 74, "84E365A7-29EF-48EB-B648-DE96C4275731", 74, 1344444368, "393811", 1344444468, "393811", "{\n}", "07/14/2012", "Health-Rodents-Rats", "Health", "235243", [ "{\"address\":\"511 MEDFORD ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39648914816104", "-71.10367063760526", null, false ], "N", "2145", "5", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 78, "6A36F205-8729-40D9-92C3-6A38F2A7FE1D", 78, 1344444368, "393811", 1344444451, "393811", "{\n}", "07/13/2012", "Health-Rodents-Rats", "Health", "235137", [ "{\"address\":\"38 POWDERHOUSE BLVD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.40204695830215", "-71.11904904430628", null, false ], "Y", "2144", "6", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 80, "CDF9A643-5BE7-46FA-A68B-AF02FE53BB4B", 80, 1344444368, "393811", 1344444525, "393811", "{\n}", "07/13/2012", "Health-Rodents-Rats", "Health", "235094", [ "{\"address\":\"20 PEARSON RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.401219582035196", "-71.11450746805832", null, false ], "N", "2144", "6", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 81, "2628061E-EA24-4900-B537-C6CF05C66890", 81, 1344444368, "393811", 1344444401, "393811", "{\n}", "07/13/2012", "Health-Rodents-Rats", "Health", "235100", [ "{\"address\":\"41 GOVERNOR WINTHROP RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.395940561723194", "-71.08711411904585", null, false ], "N", "2145", "4", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 82, "3981331C-0A8F-443A-AD39-F39654FE412D", 82, 1344444368, "393811", 1344444414, "393811", "{\n}", "07/13/2012", "Health-Rodents-Rats", "Health", "235235", [ "{\"address\":\"6 JAMES ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38790961600154", "-71.0938500410453", null, false ], "N", "2145", "4", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 84, "ABBD4D57-B193-4DBF-AE99-5ABF33A5BD32", 84, 1344444368, "393811", 1344444494, "393811", "{\n}", "07/13/2012", "Health-Rodents-Rats", "Health", "235233", [ "{\"address\":\"70 CEDAR ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.39083241259675", "-71.11340130196231", null, false ], "N", "2143", "5", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 85, "24BA6B5F-2A3B-4140-AE88-8A174E32300D", 85, 1344444368, "393811", 1344444399, "393811", "{\n}", "07/13/2012", "Health-Rodents-Rats", "Health", "235238", [ "{\"address\":\"73 GILMAN ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38575124313121", "-71.09190750546202", null, false ], "N", "2145", "1", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 87, "502DEF44-88F8-4C5C-BB30-E02959ED35D4", 87, 1344444368, "393811", 1344444429, "393811", "{\n}", "07/13/2012", "Health-Rodents-Rats", "Health", "235209", [ "{\"address\":\"269 SUMMER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.390805432935906", "-71.11405780704365", null, false ], "Y", "2144", "5", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 88, "CCDE1898-D7EE-447B-A041-84695C9C6A90", 88, 1344444368, "393811", 1344444524, "393811", "{\n}", "07/13/2012", "Health-Rodents-Rats", "Health", "235203", [ "{\"address\":\"GLEN PARK COMMUNITY GARDEN\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38667999988223", "-71.09825999969905", null, false ], "N", "2145", "1", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 89, "C1E5F3C6-1DBB-4DD6-A2DE-10C03CA3BE42", 89, 1344444368, "393811", 1344444512, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "07/13/2012", "Health-Rodents-Rats", "Health", "235210", [ "{\"address\":\"HALL ST &amp; CEDAR ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.38667999988223", "-71.09825999969905", null, false ], "N", "2144", null, "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 96, "2305B9F7-014C-49A6-BB9A-0DE0FA7A8AF5", 96, 1344444368, "393811", 1344444398, "393811", "{\n}", "07/12/2012", "Health-Rodents-Rats", "Health", "234923", [ "{\"address\":\"240 PEARL ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38784666345947", "-71.09491124103988", null, false ], "N", "2145", "1", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 97, "79FC9898-9508-4015-B284-DF3C117CAB80", 97, 1344444368, "393811", 1344444464, "393811", "{\n}", "07/12/2012", "Health-Rodents-Rats", "Health", "235040", [ "{\"address\":\"0 GLENWOOD RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39245658365765", "-71.10396626600468", null, false ], "N", "2145", "1", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 98, "3DF72E2A-B35B-4FCC-A552-4636EB2FCA25", 98, 1344444368, "393811", 1344444418, "393811", "{\n}", "07/12/2012", "Health-Rodents-Rats", "Health", "235077", [ "{\"address\":\"42 BRADLEY ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38932155158756", "-71.09381406816414", null, false ], "N", "2145", "4", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 101, "8001FD6B-A134-4BF0-A776-8835170CA29B", 101, 1344444368, "393811", 1344444467, "393811", "{\n}", "07/12/2012", "Health-Rodents-Rats", "Health", "234979", [ "{\"address\":\"363 HIGHLAND AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.394654531221306", "-71.11796985787112", null, false ], "N", "2144", "6", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 102, "52A4C0B7-650D-45B2-9813-DD4AA40FFE92", 102, 1344444368, "393811", 1344444431, "393811", "{\n}", "07/11/2012", "Health-Rodents-Rats", "Health", "234915", [ "{\"address\":\"24 BOSTON AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39539197528529", "-71.11088320028023", null, false ], "N", "2144", "5", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 103, "ADDE6904-C836-426F-8259-5A3338AD0C15", 103, 1344444368, "393811", 1344444494, "393811", "{\n}", "07/11/2012", "Health-Rodents-Rats", "Health", "234902", [ "{\"address\":\"265 SUMMER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39065254819093", "-71.11381499009576", null, false ], "Y", "2144", "5", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 107, "BA1B7599-63E0-4DAE-8E6A-431C490CFB3A", 107, 1344444368, "393811", 1344444504, "393811", "{\n}", "07/10/2012", "Health-Rodents-Rats", "Health", "234691", [ "{\"address\":\"EDWARD L. LEATHERS COMMUNITY PARK\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38667999988223", "-71.09825999969905", null, false ], "N", "2145", "1", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 110, "537BAC66-41EA-4843-ADF3-06019A261F4C", 110, 1344444368, "393811", 1344444431, "393811", "{\n}", "07/10/2012", "Health-Rodents-Rats", "Health", "234606", [ "{\"address\":\"171 WALNUT ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.390337785480654", "-71.09114308173713", null, false ], "N", "2145", "1", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 114, "99FB6EFE-5844-4B23-9E33-540080295A09", 114, 1344444368, "393811", 1344444483, "393811", "{\n}", "07/09/2012", "Health-Rodents-Rats", "Health", "234517", [ "{\"address\":\"213 HIGHLAND AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.39005899565154", "-71.10754671555156", null, false ], "N", "2143", "5", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 118, "948551C8-B8DE-4F6E-B15E-67C38CF2A66D", 118, 1344444368, "393811", 1344444481, "393811", "{\n}", "07/09/2012", "Health-Rodents-Rats", "Health", "234544", [ "{\"address\":\"114 SCHOOL ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.386335802450276", "-71.09909308847614", null, false ], "N", "2143", "3", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 126, "0EE42147-7DE2-412C-A95F-50150747CA90", 126, 1344444368, "393811", 1344444387, "393811", "{\n}", "07/06/2012", "Health-Rodents-Rats", "Health", "234470", [ "{\"address\":\"37 MOUNT PLEASANT ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38481594822076", "-71.07886733603715", null, false ], "N", "2145", "1", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 130, "2BD9D5CE-92EA-4643-B5F0-64C0C4C61A49", 130, 1344444368, "393811", 1344444405, "393811", "{\n}", "07/05/2012", "Health-Rodents-Rats", "Health", "234379", [ "{\"address\":\"12 BROADWAY\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38637177533144", "-71.08152932924389", null, false ], "Y", "2145", "1", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 131, "225CA1F1-A8E0-44D7-9589-34353D43D078", 131, 1344444368, "393811", 1344444397, "393811", "{\n}", "07/05/2012", "Health-Rodents-Rats", "Health", "234394", [ "{\"address\":\"15 WALKER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.401219582035196", "-71.11833857990314", null, false ], "Y", "2144", "6", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 132, "1E8164A0-9883-4CED-923A-981EA0AD8B69", 132, 1344444368, "393811", 1344444394, "393811", "{\n}", "07/05/2012", "Health-Rodents-Rats", "Health", "234387", [ "{\"address\":\"90 HUDSON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.39074248039384", "-71.10743879690801", null, false ], "Y", "2143", "5", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 133, "2BFDD3B4-6BE7-4A3A-AF19-425BD3CF007F", 133, 1344444368, "393811", 1344444405, "393811", "{\n}", "07/05/2012", "Health-Rodents-Rats", "Health", "234412", [ "{\"address\":\"40 POWDER HOUSE BLVD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.402082931183315", "-71.11917494939041", null, false ], "Y", "2144", "6", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 134, "4815D580-AC43-432D-B275-C022DD1D9E65", 134, 1344444368, "393811", 1344444425, "393811", "{\n}", "07/05/2012", "Health-Rodents-Rats", "Health", "234374", [ "{\"address\":\"0 LINCOLN AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38679445668521", "-71.08076940212914", null, false ], "Y", "2145", "1", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 142, "8E4542AF-4263-4401-A2E4-409E1FE32B54", 142, 1344444368, "393811", 1344444478, "393811", "{\n}", "07/03/2012", "Health-Rodents-Rats", "Health", "234292", [ "{\"address\":\"26 MOUNT VERNON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.385175677032464", "-71.07951484789828", null, false ], "Y", "2145", "1", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 143, "0F732D94-5970-4D16-9ECB-671BADD76C25", 143, 1344444368, "393811", 1344444387, "393811", "{\n}", "07/03/2012", "Health-Rodents-Rats", "Health", "234291", [ "{\"address\":\"86 HUDSON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.390706507512675", "-71.10733087826452", null, false ], "Y", "2143", "5", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 144, "C93E7855-5DA5-40C5-BF2C-7E4CA987916A", 144, 1344444368, "393811", 1344444520, "393811", "{\n}", "07/03/2012", "Health-Rodents-Rats", "Health", "234321", [ "{\"address\":\"8 HALL ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.3912730803911", "-71.11351821382613", null, false ], "Y", "2144", "5", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 145, "2A73C076-AB7A-476B-B045-51D52C679464", 145, 1344444368, "393811", 1344444404, "393811", "{\n}", "07/03/2012", "Health-Rodents-Rats", "Health", "234322", [ "{\"address\":\"12 WESTWOOD RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38713619905633", "-71.10568511895087", null, false ], "Y", "2143", "3", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 153, "2FB2C776-053A-4449-BA92-DE3A8C0768C0", 153, 1344444368, "393811", 1344444408, "393811", "{\n}", "07/02/2012", "Health-Rodents-Rats", "Health", "234225", [ "{\"address\":\"513 MEDFORD ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.396552100703104", "-71.10372459692701", null, false ], "N", "2145", "0", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 155, "4F07CEE4-441D-49EE-886F-5EC649D1BF9B", 155, 1344444368, "393811", 1344444429, "393811", "{\n}", "07/02/2012", "Health-Rodents-Rats", "Health", "234196", [ "{\"address\":\"6 WEST ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.394572605302436", "-71.11890671696537", null, false ], "Y", "2144", "6", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 157, "846C29B1-36F9-4229-95FA-CF620A3C0B7E", 157, 1344444368, "393811", 1344444468, "393811", "{\n}", "07/02/2012", "Health-Rodents-Rats", "Health", "234212", [ "{\"address\":\"15 ADAMS ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.393755209191966", "-71.10078381389121", null, false ], "Y", "2145", "5", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 159, "20F9CDA1-50E5-42DC-9564-4525451F1662", 159, 1344444368, "393811", 1344444395, "393811", "{\n}", "07/02/2012", "Health-Rodents-Rats", "Health", "234267", [ "{\"address\":\"11 KENSINGTON AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.389807185483335", "-71.08695224108055", null, false ], "Y", "2145", "1", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 171, "5923B6C4-D18F-4145-8F13-9DB762F3E153", 171, 1344444368, "393811", 1344444439, "393811", "{\n}", "07/01/2012", "Health-Rodents-Rats", "Health", "234167", [ "{\"address\":\"162 WALNUT ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38987913124572", "-71.09161972241264", null, false ], "Y", "2145", "4", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 172, "1B5D3DD7-5D04-4130-96F1-E8CAE7254B06", 172, 1344444368, "393811", 1344444392, "393811", "{\n}", "07/01/2012", "Health-Rodents-Rats", "Health", "234171", [ "{\"address\":\"6 WALNUT RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39011295497335", "-71.09184455291995", null, false ], "N", "2145", "5", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 173, "EEC843A9-AF99-423A-92B6-FDFC746568C9", 173, 1344444368, "393811", 1344444552, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "07/01/2012", "Health-Rodents-Rats", "Health", "234177", [ "{\"address\":\"BROADWAY &amp; RUSH ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", null, null, "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 176, "C380529C-F6B1-42DC-BCB0-3702F321B1FB", 176, 1344444368, "393811", 1344444513, "393811", "{\n}", "06/30/2012", "Health-Rodents-Rats", "Health", "234154", [ "{\"address\":\"6 NASHUA ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39543694138678", "-71.10540632912182", null, false ], "Y", "2145", "5", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 178, "C70C65F4-84A7-429A-AD9A-74A45240ACDE", 178, 1344444368, "393811", 1344444517, "393811", "{\n}", "06/29/2012", "Health-Rodents-Rats", "Health", "234088", [ "{\"address\":\"9 EASTMAN RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.39150690411873", "-71.11193540705455", null, false ], "Y", "2143", "5", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 185, "7839BDB5-8AFF-4612-BBEF-7ECAB634C771", 185, 1344444368, "393811", 1344444461, "393811", "{\n}", "06/28/2012", "Health-Rodents-Rats", "Health", "234043", [ "{\"address\":\"BOW ST ISLAND\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2143", "3", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 191, "57AC2DF1-2D30-4D01-B815-B88B2AF518E4", 191, 1344444368, "393811", 1344444438, "393811", "{\n}", "06/27/2012", "Health-Rodents-Rats", "Health", "233944", [ "{\"address\":\"23 PRICHARD AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39548190748826", "-71.11150373248046", null, false ], "Y", "2144", "5", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 192, "B828137D-CB99-49F8-8F8D-165C0A2025BA", 192, 1344444368, "393811", 1344444501, "393811", "{\n}", "06/27/2012", "Health-Rodents-Rats", "Health", "233865", [ "{\"address\":\"16 MOUNT VERNON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.385535405844166", "-71.07926303773007", null, false ], "Y", "2145", "1", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 194, "C7850F91-4640-4BBB-A881-EA4FC0DF2BD7", 194, 1344444368, "393811", 1344444519, "393811", "{\n}", "06/27/2012", "Health-Rodents-Rats", "Health", "233901", [ "{\"address\":\"6 GILMAN TER\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.387441968546284", "-71.09237515291727", null, false ], "Y", "2145", "1", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 195, "FD253F5E-0137-4DE1-9AA4-EF6BFE335C8E", 195, 1344444368, "393811", 1344444560, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "06/27/2012", "Health-Rodents-Rats", "Health", "233932", [ "{\"address\":\"BAILEY RD &amp; SHORE DR\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2145", null, "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 204, "E2D24051-6A72-4E38-A8C7-FA918F49ABF6", 204, 1344444368, "393811", 1344444541, "393811", "{\n}", "06/26/2012", "Health-Rodents-Rats", "Health", "233840", [ "{\"address\":\"126 CENTRAL ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39150690411873", "-71.10129642744789", null, false ], "N", "2145", "5", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 209, "45A67A7E-41BF-43FE-95A1-123982705415", 209, 1344444368, "393811", 1344444424, "393811", "{\n}", "06/25/2012", "Health-Rodents-Rats", "Health", "233709", [ "{\"address\":\"CONWAY PARK\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38667999988223", "-71.09825999969905", null, false ], "N", "2143", "2", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 210, "EB75FDE6-3CD3-4964-976D-165FBB033B1F", 210, 1344444368, "393811", 1344444549, "393811", "{\n}", "06/25/2012", "Health-Rodents-Rats", "Health", "233720", [ "{\"address\":\"275 SUMMER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39101227700263", "-71.11436357653366", null, false ], "Y", "2144", "5", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 212, "E3FF71AA-ECA1-463B-8DF2-C653315599FC", 212, 1344444368, "393811", 1344444542, "393811", "{\n}", "06/25/2012", "Health-Rodents-Rats", "Health", "233705", [ "{\"address\":\"0 MILLER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.383842734330294", "-71.11237022261035", null, false ], "Y", "2143", "2", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 219, "55C6B97D-058A-4ABD-B7ED-C5D696B88ACD", 219, 1344444368, "393811", 1344444435, "393811", "{\n}", "06/24/2012", "Health-Rodents-Rats", "Health", "233672", [ "{\"address\":\"213 HIGHLAND AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.39005899565154", "-71.10754671555156", null, false ], "Y", "2143", "5", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 221, "EF3FB8C3-F075-4A6D-85E5-37EC64D132C6", 221, 1344444368, "393811", 1344444552, "393811", "{\n}", "06/24/2012", "Health-Rodents-Rats", "Health", "233678", [ "{\"address\":\"118 WALNUT ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38776572447688", "-71.09303165799867", null, false ], "N", "2145", "4", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 229, "73C394E6-EE09-4ED8-8D0C-7EF9483D3129", 229, 1344444368, "393811", 1344444459, "393811", "{\n}", "06/23/2012", "Health-Rodents-Rats", "Health", "233650", [ "{\"address\":\"9 DAVIS SQUARE SQ\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39606020209549", "-71.1221853887089", null, false ], "N", "2144", "1", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 232, "5488F333-4729-4055-8711-DDE061F65545", 232, 1344444368, "393811", 1344444432, "393811", "{\n}", "06/22/2012", "Health-Rodents-Rats", "Health", "233552", [ "{\"address\":\"15 WARNER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.40166924304981", "-71.1157035663573", null, false ], "Y", "2144", "6", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 238, "E7C3192B-0DF4-4D2B-9786-16F536DA8830", 238, 1344444368, "393811", 1344444545, "393811", "{\n}", "06/21/2012", "Health-Rodents-Rats", "Health", "233444", [ "{\"address\":\"10 CYPRESS ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.383790721107346", "-71.10707906809631", null, false ], "Y", "2143", "2", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 243, "962123F0-3881-4A3D-BA2D-28ACB71B8921", 243, 1344444368, "393811", 1344444482, "393811", "{\n}", "06/21/2012", "Health-Rodents-Rats", "Health", "233539", [ "{\"address\":\"18 MOUNT VERNON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38548144652242", "-71.07929001739092", null, false ], "Y", "2145", "1", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 244, "E8CA4B3F-FFF6-4E44-AF33-63F03754690C", 244, 1344444368, "393811", 1344444545, "393811", "{\n}", "06/21/2012", "Health-Rodents-Rats", "Health", "233537", [ "{\"address\":\"9 CHANDLER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39828779221966", "-71.12231358327267", null, false ], "Y", "2144", "6", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 245, "FF648EED-6F28-4D8B-BE70-99B9BF20B37B", 245, 1344444368, "393811", 1344444561, "393811", "{\n}", "06/21/2012", "Health-Rodents-Rats", "Health", "233497", [ "{\"address\":\"140 JAQUES ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.396024132839976", "-71.09546711205495", null, false ], "Y", "2145", "4", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 250, "409721D9-CDE7-491D-B4D4-C50CBBE8F141", 250, 1344444368, "393811", 1344444420, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "06/20/2012", "Health-Rodents-Rats", "Health", "233321", [ "{\"address\":\"OLIVER ST &amp; GLEN ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2145", null, "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 253, "33C3E7C4-5709-4A5E-A3AD-84C521FFF968", 253, 1344444368, "393811", 1344444411, "393811", "{\n}", "06/19/2012", "Health-Rodents-Rats", "Health", "233291", [ "{\"address\":\"0 BEACON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38679807439265", "-71.11625637889313", null, false ], "Y", "2143", "0", "07/03/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 254, "3CA1A15D-F5DB-4EAD-83A2-A9A274CC4077", 254, 1344444368, "393811", 1344444416, "393811", "{\n}", "06/19/2012", "Health-Rodents-Rats", "Health", "233292", [ "{\"address\":\"0 MORRISON AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39437475436506", "-71.11083803526782", null, false ], "Y", "2144", "5", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 255, "E6E42A8D-4C20-472C-BC2E-8B6394AA7A1B", 255, 1344444368, "393811", 1344444543, "393811", "{\n}", "06/19/2012", "Health-Rodents-Rats", "Health", "233232", [ "{\"address\":\"0 BRADLEY ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.387883394175496", "-71.09480488315832", null, false ], "Y", "2145", "2", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 256, "5CFA6726-1F19-45EE-AA18-30DCD968AA19", 256, 1344444368, "393811", 1344444441, "393811", "{\n}", "06/19/2012", "Health-Rodents-Rats", "Health", "233254", [ "{\"address\":\"173 CENTRAL ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39378218885287", "-71.0996236884734", null, false ], "Y", "2145", "5", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 257, "F1A76030-5CD0-474E-8B90-EB6AA2FD02CF", 257, 1344444368, "393811", 1344444554, "393811", "{\n}", "06/19/2012", "Health-Rodents-Rats", "Health", "233254", [ "{\"address\":\"173 CENTRAL ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39378218885287", "-71.0996236884734", null, false ], "Y", "2145", "5", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 261, "EAC0B2BF-6846-491D-AD30-C7C31830DBFE", 261, 1344444368, "393811", 1344444548, "393811", "{\n}", "06/16/2012", "Health-Rodents-Rats", "Health", "233186", [ "{\"address\":\"14 PITMAN ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38414277663068", "-71.10829521966251", null, false ], "Y", "2143", "3", "07/03/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 266, "8EB47659-AAB0-4297-935B-8AAB05D92866", 266, 1344444368, "393811", 1344444478, "393811", "{\n}", "06/14/2012", "Health-Rodents-Rats", "Health", "233111", [ "{\"address\":\"231 WILLOW AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39842269052406", "-71.11383297653634", null, false ], "Y", "2144", "6", "06/21/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 267, "AF926231-DD4F-4C1E-BC01-5260EDC03631", 267, 1344444368, "393811", 1344444496, "393811", "{\n}", "06/14/2012", "Health-Rodents-Rats", "Health", "233072", [ "{\"address\":\"30 MT.VERNON\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38499126898708", "-71.07962114297199", null, false ], "Y", "2145", "4", "06/21/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 274, "EE8FEE99-F259-4560-A504-0EC7FBF7098B", 274, 1344444368, "393811", 1344444551, "393811", "{\n}", "06/13/2012", "Health-Rodents-Rats", "Health", "233007", [ "{\"address\":\"341 BEACON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38524762279479", "-71.1149121629715", null, false ], "Y", "2143", "2", "07/03/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 279, "27583DFE-AD98-4EA5-AAA5-31A50CCC99CD", 279, 1344444368, "393811", 1344444403, "393811", "{\n}", "06/12/2012", "Health-Rodents-Rats", "Health", "232951", [ "{\"address\":\"5 HALL AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.398485643066124", "-71.12046997311256", null, false ], "Y", "2144", "6", "06/15/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 280, "6901FE45-5165-4966-AE1B-719EF45936EA", 280, 1344444368, "393811", 1344444450, "393811", "{\n}", "06/12/2012", "Health-Rodents-Rats", "Health", "232976", [ "{\"address\":\"36 WALLACE ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39904322272429", "-71.12270029174528", null, false ], "Y", "2144", "6", "06/15/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 281, "EF72C2C7-30EE-4061-88E6-611555C2FD6A", 281, 1344444368, "393811", 1344444552, "393811", "{\n}", "06/12/2012", "Health-Rodents-Rats", "Health", "232942", [ "{\"address\":\"38 MADISON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.3883053176944", "-71.10019026135188", null, false ], "Y", "2143", "3", "06/21/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 282, "751D756E-2220-4777-ADAA-5A1C8F4BBE7D", 282, 1344444368, "393811", 1344444459, "393811", "{\n}", "06/12/2012", "Health-Rodents-Rats", "Health", "232935", [ "{\"address\":\"5 HALL AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.398485643066124", "-71.12046997311256", null, false ], "Y", "2144", "6", "06/15/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 283, "2A82C6BB-5B36-4615-9DD7-42913FEA92D9", 283, 1344444368, "393811", 1344444404, "393811", "{\n}", "06/12/2012", "Health-Rodents-Rats", "Health", "232934", [ "{\"address\":\"CITY HALL\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2143", "3", "06/21/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 284, "CC106E9F-FC3F-43DF-B626-FAB7D9C12CE7", 284, 1344444368, "393811", 1344444523, "393811", "{\n}", "06/12/2012", "Health-Rodents-Rats", "Health", "232987", [ "{\"address\":\"20 MOUNT VERNON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38540050753977", "-71.07935296993298", null, false ], "Y", "2145", "1", "06/15/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 290, "AC37F745-7162-416C-A38C-05F7450EF2FB", 290, 1344444368, "393811", 1344444494, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "06/11/2012", "Health-Rodents-Rats", "Health", "232898", [ "{\"address\":\"SYCAMORE ST &amp; MEDFORD ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", null, null, "06/21/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 291, "2E667D34-DA32-4C37-AB34-592C14BE3954", 291, 1344444368, "393811", 1344444407, "393811", "{\n}", "06/11/2012", "Health-Rodents-Rats", "Health", "232874", [ "{\"address\":\"56 DARTMOUTH ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39301776512798", "-71.09572962408652", null, false ], "Y", "2145", "4", "06/21/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 292, "9BD97566-6521-49A1-979A-789F95C720A9", 292, 1344444368, "393811", 1344444485, "393811", "{\n}", "06/11/2012", "Health-Rodents-Rats", "Health", "232890", [ "{\"address\":\"LEXINGTON PARK\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39333351009483", "-71.11166902469121", null, false ], "Y", "2144", "6", "06/21/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 293, "E2974967-2715-4E60-8B44-3419FBA4EC91", 293, 1344444368, "393811", 1344444541, "393811", "{\n}", "06/11/2012", "Health-Rodents-Rats", "Health", "232875", [ "{\"address\":\"121 WALNUT ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.387810690578306", "-71.0929417257957", null, false ], "Y", "2145", "1", "06/15/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 294, "8F77BDFB-FE56-4079-95F7-9FC45D2608F3", 294, 1344444368, "393811", 1344444479, "393811", "{\n}", "06/11/2012", "Health-Rodents-Rats", "Health", "232836", [ "{\"address\":\"115 THURSTON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.393593331226725", "-71.09623324442293", null, false ], "Y", "2145", "4", "06/21/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 295, "677A2ED5-7351-426A-AFF1-E7FD51A181D5", 295, 1344444368, "393811", 1344444449, "393811", "{\n}", "06/11/2012", "Health-Rodents-Rats", "Health", "232832", [ "{\"address\":\"65 PERKINS ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.384384273646674", "-71.07893028857922", null, false ], "Y", "2145", "1", "07/03/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 299, "5623F3A0-71AC-4A14-8E8B-88953F354A36", 299, 1344444368, "393811", 1344444435, "393811", "{\n}", "06/09/2012", "Health-Rodents-Rats", "Health", "232814", [ "{\"address\":\"88 JOSEPHINE AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39817088035585", "-71.11320345111585", null, false ], "Y", "2144", "6", "06/21/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 305, "358C4BBD-5C68-4816-96DD-947D706EDE57", 305, 1344444368, "393811", 1344444413, "393811", "{\n}", "06/08/2012", "Health-Rodents-Rats", "Health", "232728", [ "{\"address\":\"21 MOUNT VERNON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38555339228475", "-71.07932599027214", null, false ], "Y", "2145", "1", "07/20/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 310, "85E377CA-9ED8-4A9C-A2F2-D7DC89606B11", 310, 1344444368, "393811", 1344444470, "393811", "{\n}", "06/07/2012", "Health-Rodents-Rats", "Health", "232446", [ "{\"address\":\"0 MONTROSE ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38802652464623", "-71.09798872374057", null, false ], "Y", "2143", "3", "06/15/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 311, "F014BC1A-4A71-472D-AA87-EC4881296D50", 311, 1344444368, "393811", 1344444553, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "06/07/2012", "Health-Rodents-Rats", "Health", "232602", [ "{\"address\":\"WALNUT RD &amp; WALNUT ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2145", null, "06/15/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 315, "4C3EA9ED-6EEC-4B0D-8681-BA928B5084D4", 315, 1344444368, "393811", 1344444426, "393811", "{\n}", "06/06/2012", "Health-Rodents-Rats", "Health", "232421", [ "{\"address\":\"17 GOVERNOR WINTHROP RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39542122955375", "-71.08635946210593", null, false ], "Y", "2145", "4", "06/15/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 317, "0A585C8A-5AFC-47F3-B4B8-9DCA9834CDFB", 317, 1344444368, "393811", 1344444385, "393811", "{\n}", "06/06/2012", "Health-Rodents-Rats", "Health", "232381", [ "{\"address\":\"16 WILSON AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39802698883119", "-71.10895865113753", null, false ], "Y", "2145", "5", "06/15/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 323, "F31907F1-A959-44CC-A971-5D5373FDCE7E", 323, 1344444368, "393811", 1344444556, "393811", "{\n}", "06/05/2012", "Health-Rodents-Rats", "Health", "232358", [ "{\"address\":\"10 EASTMAN RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.39147992445788", "-71.11187245451248", null, false ], "Y", "2143", "5", "06/21/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 324, "8A2A3435-3D59-498A-81EE-4526D0AD5535", 324, 1344444368, "393811", 1344444475, "393811", "{\n}", "06/05/2012", "Health-Rodents-Rats", "Health", "232357", [ "{\"address\":\"0 BONAIR ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38854363803219", "-71.08958725462642", null, false ], "Y", "2145", "1", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 326, "51F93E79-F622-4406-92BE-9483F5B89716", 326, 1344444368, "393811", 1344444430, "393811", "{\n}", "06/05/2012", "Health-Rodents-Rats", "Health", "232360", [ "{\"address\":\"46 GLENWOOD RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39378218885287", "-71.10299614608329", null, false ], "Y", "2145", "5", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 327, "F9EAB5CB-B516-407B-95A0-755C5D106B6A", 327, 1344444368, "393811", 1344444559, "393811", "{\n}", "06/05/2012", "Health-Rodents-Rats", "Health", "232299", [ "{\"address\":\"0 MOUNT VERNON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38638416568926", "-71.07870945527385", null, false ], "Y", "2145", "1", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 328, "FDC81273-C49D-4E42-BF3F-90D1B3FBD0FC", 328, 1344444368, "393811", 1344444560, "393811", "{\n}", "06/05/2012", "Health-Rodents-Rats", "Health", "232306", [ "{\"address\":\"52 HALL AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39780215832383", "-71.11842851210605", null, false ], "Y", "2144", "6", "06/15/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 337, "74613503-9A3B-40F7-A4B5-F00BD4521E68", 337, 1344444368, "393811", 1344444459, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "06/04/2012", "Health-Rodents-Rats", "Health", "232143", [ "{\"address\":\"BROADWAY &amp; WALNUT ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", null, null, "06/15/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 338, "B9331475-E190-4E4C-8587-E103702328BF", 338, 1344444368, "393811", 1344444504, "393811", "{\n}", "06/04/2012", "Health-Rodents-Rats", "Health", "232182", [ "{\"address\":\"166 CENTRAL ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39350339902376", "-71.09991147152277", null, false ], "Y", "2145", "5", "06/15/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 353, "E2CF8D23-1F6B-4975-BA2F-C9BA674800AF", 353, 1344444368, "393811", 1344444541, "393811", "{\n}", "06/01/2012", "Health-Rodents-Rats", "Health", "232047", [ "{\"address\":\"0 MOUNT VERNON AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39843168374432", "-71.09483479866739", null, false ], "Y", "2145", "0", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 361, "3B04C8B8-D7DB-438A-8FD7-3660D8E472A0", 361, 1344444368, "393811", 1344444415, "393811", "{\n}", "05/31/2012", "Health-Rodents-Rats", "Health", "232015", [ "{\"address\":\"157 CENTRAL ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.393152663432375", "-71.10008234270833", null, false ], "Y", "2145", "5", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 362, "44858C84-E21D-4652-B5B0-1C5033D02D9A", 362, 1344444368, "393811", 1344444423, "393811", "{\n}", "05/31/2012", "Health-Rodents-Rats", "Health", "232025", [ "{\"address\":\"14 BILLINGHAM ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.399960531194154", "-71.11985843413265", null, false ], "Y", "2144", "6", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 367, "92C0B5A7-8BDB-4133-8EF0-52127A55F4A5", 367, 1344444368, "393811", 1344444481, "393811", "{\n}", "05/30/2012", "Health-Rodents-Rats", "Health", "231875", [ "{\"address\":\"5 AUTUMN ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38879994481056", "-71.08721304446908", null, false ], "Y", "2145", "1", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 368, "39FB6078-B44A-43F2-9940-06FBE8D4BA4B", 368, 1344444368, "393811", 1344444414, "393811", "{\n}", "05/30/2012", "Health-Rodents-Rats", "Health", "231874", [ "{\"address\":\"43 THURSTON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.391327039712905", "-71.09782504441483", null, false ], "Y", "2145", "4", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 381, "45E18301-3CAC-4134-AFF4-E168D5F7D690", 381, 1344444368, "393811", 1344444424, "393811", "{\n}", "05/29/2012", "Health-Rodents-Rats", "Health", "231779", [ "{\"address\":\"0 MOUNT VERNON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38638416568926", "-71.07870945527385", null, false ], "Y", "2145", "1", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 382, "D1A574A5-2D03-47A5-8DAA-CAE160515251", 382, 1344444368, "393811", 1344444528, "393811", "{\n}", "05/29/2012", "Health-Rodents-Rats", "Health", "231779", [ "{\"address\":\"0 MOUNT VERNON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38638416568926", "-71.07870945527385", null, false ], "Y", "2145", "1", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 385, "F90DC6C8-1677-4135-B8D7-9C3205443371", 385, 1344444368, "393811", 1344444559, "393811", "{\n}", "05/29/2012", "Health-Rodents-Rats", "Health", "231788", [ "{\"address\":\"0 BONAIR ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38854363803219", "-71.08958725462642", null, false ], "Y", "2145", "1", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 393, "9EAC987B-268C-4DC3-9EC1-D877A71F6041", 393, 1344444368, "393811", 1344444487, "393811", "{\n}", "05/27/2012", "Health-Rodents-Rats", "Health", "231750", [ "{\"address\":\"68 THURSTON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.392253341403034", "-71.09726746475667", null, false ], "Y", "2145", "4", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 397, "949B1FF8-8617-4C5C-AB7C-D557BBB88071", 397, 1344444368, "393811", 1344444482, "393811", "{\n}", "05/25/2012", "Health-Rodents-Rats", "Health", "231712", [ "{\"address\":\"1 KENWOOD ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.400410192208824", "-71.11927387481364", null, false ], "Y", "2144", "6", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 398, "388293E6-CC6E-46D8-AA74-30E47AEC235D", 398, 1344444368, "393811", 1344444414, "393811", "{\n}", "05/25/2012", "Health-Rodents-Rats", "Health", "231704", [ "{\"address\":\"217 HIGHLAND AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.39025781762557", "-71.10791809965696", null, false ], "Y", "2143", "5", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 406, "0A28A231-D04C-429C-9399-96A88A90061C", 406, 1344444368, "393811", 1344444384, "393811", "{\n}", "05/24/2012", "Health-Rodents-Rats", "Health", "231678", [ "{\"address\":\"34 LINCOLN ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38581419567328", "-71.08083685128133", null, false ], "Y", "2145", "1", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 408, "AAD9BA73-1AC1-4427-AB5E-E1E370C2868A", 408, 1344444368, "393811", 1344444493, "393811", "{\n}", "05/24/2012", "Health-Rodents-Rats", "Health", "231618", [ "{\"address\":\"8 KENWOOD ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.40029328034501", "-71.11891414600188", null, false ], "N", "2144", "6", "-", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 409, "55566154-10B8-4CDF-A6BB-F5EF84806ADB", 409, 1344444368, "393811", 1344444434, "393811", "{\n}", "05/24/2012", "Health-Rodents-Rats", "Health", "231665", [ "{\"address\":\"58 MARSHALL ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38993644342513", "-71.09453197377852", null, false ], "Y", "2145", "4", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 410, "39999369-54A7-4A6C-AA4B-6143260E896C", 410, 1344444368, "393811", 1344444414, "393811", "{\n}", "05/24/2012", "Health-Rodents-Rats", "Health", "231624", [ "{\"address\":\"0 MOUNT VERNON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38638416568926", "-71.07870945527385", null, false ], "Y", "2145", "1", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 414, "D5AF2AAF-4459-4C55-AB08-E85DE2182246", 414, 1344444368, "393811", 1344444531, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "05/23/2012", "Health-Rodents-Rats", "Health", "231349", [ "{\"address\":\"BRADLEY ST &amp; JACKSON RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2145", null, "05/24/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 416, "A55931ED-7E28-4EFC-A3B9-ACC97FF104C9", 416, 1344444368, "393811", 1344444490, "393811", "{\n}", "05/23/2012", "Health-Rodents-Rats", "Health", "231611", [ "{\"address\":\"8 KENWOOD ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.40029328034501", "-71.11891414600188", null, false ], "Y", "2144", "6", "05/24/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 418, "7780A38C-E395-4469-8BEB-58B0AD01EADF", 418, 1344444368, "393811", 1344444461, "393811", "{\n}", "05/22/2012", "Health-Rodents-Rats", "Health", "231270", [ "{\"address\":\"0 GILMAN TER\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38718498801118", "-71.092537936617", null, false ], "Y", "2145", "1", "05/25/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 419, "43E29383-EE8B-4329-8D75-B88BC3A4F541", 419, 1344444368, "393811", 1344444422, "393811", "{\n}", "05/22/2012", "Health-Rodents-Rats", "Health", "231266", [ "{\"address\":\"0 MORELAND ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39627171724047", "-71.09866635817497", null, false ], "Y", "2145", "0", "06/15/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 422, "273F0F22-CE93-44B2-83BE-EAB577613319", 422, 1344444368, "393811", 1344444402, "393811", "{\n}", "05/21/2012", "Health-Rodents-Rats", "Health", "231155", [ "{\"address\":\"773 POWER HOUSE SQ\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2143", "1", "05/24/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 423, "23595CA5-8650-44EC-9273-2E6B2E8796DB", 423, 1344444368, "393811", 1344444398, "393811", "{\n}", "05/21/2012", "Health-Rodents-Rats", "Health", "231138", [ "{\"address\":\"0 MORTIMER PL\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39057913049576", "-71.09418678894974", null, false ], "Y", "2145", "5", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 430, "15286958-2196-4233-82C7-CCE2E526528B", 430, 1344444368, "393811", 1344444389, "393811", "{\n}", "05/18/2012", "Health-Rodents-Rats", "Health", "231043", [ "{\"address\":\"7 GILMAN TER\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.3874509617666", "-71.0922852207143", null, false ], "Y", "2145", "1", "05/25/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 437, "87C577FE-31A2-4862-82ED-91BC28A89078", 437, 1344444368, "393811", 1344444471, "393811", "{\n}", "05/17/2012", "Health-Rodents-Rats", "Health", "230965", [ "{\"address\":\"0 MT. VERNON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38638416568926", "-71.07870945527385", null, false ], "Y", "2145", "1", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 458, "57D53941-E232-4FA8-A082-C15806B5B25D", 458, 1344444368, "393811", 1344444438, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "05/14/2012", "Health-Rodents-Rats", "Health", "230449", [ "{\"address\":\"SUMMER ST &amp; CHERRY ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", null, null, "05/25/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 459, "AB917582-7E24-4A83-ACEF-95831907C8DE", 459, 1344444368, "393811", 1344444494, "393811", "{\n}", "05/14/2012", "Health-Rodents-Rats", "Health", "230448", [ "{\"address\":\"16 HALL ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.3914619380173", "-71.11381499009576", null, false ], "Y", "2144", "5", "05/25/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 460, "8900CAEF-5787-4ADB-825D-D2AF4558F2F6", 460, 1344444368, "393811", 1344444474, "393811", "{\n}", "05/14/2012", "Health-Rodents-Rats", "Health", "230426", [ "{\"address\":\"420 MEDFORD ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39175871428694", "-71.09988449186193", null, false ], "Y", "2145", "4", "05/18/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 470, "616534FD-362D-436F-ACEF-831D693A68EF", 470, 1344444368, "393811", 1344444443, "393811", "{\n}", "05/10/2012", "Health-Rodents-Rats", "Health", "230328", [ "{\"address\":\"36 RICHARDSON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39598552782468", "-71.10587397657707", null, false ], "Y", "2145", "5", "06/12/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 471, "AB00F1F9-FE9B-4AB2-A0E2-5950EF1BEC7C", 471, 1344444368, "393811", 1344444494, "393811", "{\n}", "05/10/2012", "Health-Rodents-Rats", "Health", "230328", [ "{\"address\":\"36 RICHARDSON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39598552782468", "-71.10587397657707", null, false ], "Y", "2145", "5", "06/12/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 473, "5E10ECC7-831E-410F-8719-8A6815102968", 473, 1344444368, "393811", 1344444442, "393811", "{\n}", "05/10/2012", "Health-Rodents-Rats", "Health", "230289", [ "{\"address\":\"36 MADISON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.388260351592976", "-71.10007334948807", null, false ], "Y", "2143", "3", "05/18/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 478, "AD5EE18C-F42F-48E5-A8D4-7FA08887B49F", 478, 1344444368, "393811", 1344444494, "393811", "{\n}", "05/09/2012", "Health-Rodents-Rats", "Health", "230234", [ "{\"address\":\"56 MARSHALL ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39013993463419", "-71.09445258680495", null, false ], "Y", "2145", "4", "05/18/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 479, "C3B6057B-9B27-40E3-B33C-25CBB899767A", 479, 1344444368, "393811", 1344444515, "393811", "{\n}", "05/09/2012", "Health-Rodents-Rats", "Health", "230183", [ "{\"address\":\"0 MORRISON AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39437475436506", "-71.11083803526782", null, false ], "Y", "2144", "5", "05/18/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 480, "CA9B1EA4-8BD6-4219-8D55-4A8EFB6BD7EB", 480, 1344444368, "393811", 1344444521, "393811", "{\n}", "05/09/2012", "Health-Rodents-Rats", "Health", "230204", [ "{\"address\":\"66 FLINT ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38501379906717", "-71.08904766140887", null, false ], "Y", "2145", "1", "05/18/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 481, "0C5C48FB-0A54-4E2B-A699-A79D04E12147", 481, 1344444368, "393811", 1344444386, "393811", "{\n}", "05/09/2012", "Health-Rodents-Rats", "Health", "230187", [ "{\"address\":\"35 BOND ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.3956437854535", "-71.09553177324011", null, false ], "Y", "2145", "4", "05/18/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 482, "6BC5BF96-F247-4564-82D8-A216FF7337CB", 482, 1344444368, "393811", 1344444452, "393811", "{\n}", "05/09/2012", "Health-Rodents-Rats", "Health", "230172", [ "{\"address\":\"11 KENWOOD ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.400158382040615", "-71.11877924769749", null, false ], "Y", "2144", "6", "05/16/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 483, "2F392EC1-C081-4EB3-B638-E1196E205BEC", 483, 1344444368, "393811", 1344444407, "393811", "{\n}", "05/09/2012", "Health-Rodents-Rats", "Health", "230174", [ "{\"address\":\"17 PRICHARD AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39524227510798", "-71.11162108640264", null, false ], "Y", "2144", "5", "05/18/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 484, "E1895CEA-07F4-4010-B3E1-95F163D3D4DD", 484, 1344444368, "393811", 1344444539, "393811", "{\n}", "05/09/2012", "Health-Rodents-Rats", "Health", "230193", [ "{\"address\":\"0 OTIS ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38701867771217", "-71.08707669460425", null, false ], "Y", "2145", "1", "06/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 494, "3039FE05-43D6-4D80-B5AA-45449E4EA29E", 494, 1344444368, "393811", 1344444409, "393811", "{\n}", "05/08/2012", "Health-Rodents-Rats", "Health", "230078", [ "{\"address\":\"35 OTIS ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38768478549423", "-71.08884081734209", null, false ], "Y", "2145", "1", "05/16/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 495, "E950C65C-05C0-41B8-9BDA-3EDE49F6808C", 495, 1344444368, "393811", 1344444546, "393811", "{\n}", "05/08/2012", "Health-Rodents-Rats", "Health", "230076", [ "{\"address\":\"31 WISCONSIN AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38897081599612", "-71.08378662753745", null, false ], "Y", "2145", "1", "05/18/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 501, "6E1CF908-C878-4945-BCD0-BA814279C875", 501, 1344444368, "393811", 1344444455, "393811", "{\n}", "05/07/2012", "Health-Rodents-Rats", "Health", "230073", [ "{\"address\":\"26 GLENWOOD RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.393242595635286", "-71.10337386133557", null, false ], "Y", "2145", "5", "05/16/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 502, "A0AC374A-5D4D-4810-9D74-740ABC5EF282", 502, 1344444370, "393811", 1344444487, "393811", "{\n}", "05/07/2012", "Health-Rodents-Rats", "Health", "230039", [ "{\"address\":\"9 RADCLIFFE RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38844920921912", "-71.09322051562481", null, false ], "Y", "2145", "4", "05/18/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 508, "E2743E3A-8244-47E8-B471-B18E3887D5D2", 508, 1344444370, "393811", 1344444539, "393811", "{\n}", "05/06/2012", "Health-Rodents-Rats", "Health", "229986", [ "{\"address\":\"0 ROGERS AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.3953918714699", "-71.11426607544614", null, false ], "Y", "2144", "5", "06/12/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 509, "B55FF14D-A777-407F-AC1D-62392AD27EC7", 509, 1344444370, "393811", 1344444499, "393811", "{\n}", "05/06/2012", "Health-Rodents-Rats", "Health", "229990", [ "{\"address\":\"58 LOWDEN AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39841369730374", "-71.11483122398886", null, false ], "Y", "2144", "6", "05/09/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 511, "EC026103-DE99-472B-BD84-1F32A9D10D92", 511, 1344444370, "393811", 1344444550, "393811", "{\n}", "05/05/2012", "Health-Rodents-Rats", "Health", "229979", [ "{\"address\":\"137 SYCAMORE ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.3929997786874", "-71.09810383424389", null, false ], "Y", "2145", "4", "05/18/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 512, "9BFA2C42-4083-4744-A61C-4D475DBF28A7", 512, 1344444370, "393811", 1344444485, "393811", "{\n}", "05/04/2012", "Health-Rodents-Rats", "Health", "229831", [ "{\"address\":\"102 PERKINS ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38496214516856", "-71.08092763917324", null, false ], "Y", "2145", "1", "05/18/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 513, "8663C4D7-0F87-4756-B784-C90AEB4FFC05", 513, 1344444370, "393811", 1344444470, "393811", "{\n}", "05/04/2012", "Health-Rodents-Rats", "Health", "229819", [ "{\"address\":\"101 CENTRAL ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.3894834295528", "-71.10262742405126", null, false ], "Y", "2143", "3", "05/18/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 515, "8031F6BC-A8C3-44C6-8F27-E7CFBC16893C", 515, 1344444370, "393811", 1344444467, "393811", "{\n}", "05/04/2012", "Health-Rodents-Rats", "Health", "229832", [ "{\"address\":\"62 MYRTLE ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.384007448930774", "-71.08372512124483", null, false ], "Y", "2145", "1", "05/16/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 516, "138F7487-3454-462B-930A-075703A5C894", 516, 1344444370, "393811", 1344444388, "393811", "{\n}", "05/04/2012", "Health-Rodents-Rats", "Health", "229977", [ "{\"address\":\"27 VIRGINIA ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38656063295758", "-71.09229421393462", null, false ], "Y", "2145", "1", "05/09/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 524, "25B808B4-D2A9-4054-9316-D65FF0CF009B", 524, 1344444370, "393811", 1344444400, "393811", "{\n}", "05/02/2012", "Health-Rodents-Rats", "Health", "229686", [ "{\"address\":\"5 AUTUMN ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38879994481056", "-71.08721304446908", null, false ], "Y", "2145", "1", "05/16/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 540, "268CDD8D-5341-46AA-8931-E45B2B95E83D", 540, 1344444370, "393811", 1344444401, "393811", "{\n}", "04/30/2012", "Health-Rodents-Rats", "Health", "229529", [ "{\"address\":\"34 LINCOLN ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38581419567328", "-71.08083685128133", null, false ], "Y", "2145", "1", "05/04/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 543, "8A58AA35-A609-4038-8B7F-DA575E6FD9BC", 543, 1344444370, "393811", 1344444475, "393811", "{\n}", "04/27/2012", "Health-Rodents-Rats", "Health", "229458", [ "{\"address\":\"0 MARSHALL ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39242421258862", "-71.09302266477835", null, false ], "Y", "2145", "0", "05/04/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 544, "F8A144BE-B810-4CDB-8387-C7BDBD64EE60", 544, 1344444370, "393811", 1344444559, "393811", "{\n}", "04/27/2012", "Health-Rodents-Rats", "Health", "229461", [ "{\"address\":\"18 BILLINGHAM ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.4000414701768", "-71.11979548159059", null, false ], "Y", "2144", "6", "05/04/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 547, "C11E3985-D54F-47E0-A42C-01D3299EA95E", 547, 1344444370, "393811", 1344444511, "393811", "{\n}", "04/26/2012", "Health-Rodents-Rats", "Health", "229421", [ "{\"address\":\"20 MOUNT VERNON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38540050753977", "-71.07935296993298", null, false ], "Y", "2145", "1", "04/30/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 548, "F29E1F7D-41C1-4633-AF6A-750BB4A3B2A3", 548, 1344444370, "393811", 1344444555, "393811", "{\n}", "04/26/2012", "Health-Rodents-Rats", "Health", "229422", [ "{\"address\":\"6 MILLER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38405152449582", "-71.11261889179679", null, false ], "Y", "2143", "2", "05/01/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 549, "44AD20FF-3A4C-410C-BDE2-EE02EC1AE2A2", 549, 1344444370, "393811", 1344444424, "393811", "{\n}", "04/26/2012", "Health-Rodents-Rats", "Health", "229420", [ "{\"address\":\"12 RUSH ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.387711765155075", "-71.08536044108871", null, false ], "Y", "2145", "1", "04/30/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 550, "3E2F1EC9-6850-4BBA-9DD3-7FD02F5B47F7", 550, 1344444370, "393811", 1344444418, "393811", "{\n}", "04/26/2012", "Health-Rodents-Rats", "Health", "229290", [ "{\"address\":\"9 BARTLETT ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39230730072484", "-71.1030860782862", null, false ], "Y", "2145", "5", "05/04/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 551, "9B022023-1FDF-4C03-AE77-ECED9CD7856D", 551, 1344444370, "393811", 1344444484, "393811", "{\n}", "04/26/2012", "Health-Rodents-Rats", "Health", "229292", [ "{\"address\":\"15 KENNESON RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39085939225765", "-71.09183555969969", null, false ], "Y", "2145", "4", "05/04/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 552, "9EA54789-0698-46A2-B5E5-C0049688E949", 552, 1344444370, "393811", 1344444487, "393811", "{\n}", "04/26/2012", "Health-Rodents-Rats", "Health", "229267", [ "{\"address\":\"103 GILMAN ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38645271431409", "-71.09295071901602", null, false ], "Y", "2145", "1", "04/30/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 557, "12EFED8B-1017-4249-989A-9D8BB52D62B1", 557, 1344444370, "393811", 1344444388, "393811", "{\n}", "04/25/2012", "Health-Rodents-Rats", "Health", "229203", [ "{\"address\":\"0 AMES ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.391998456506784", "-71.10121948581273", null, false ], "Y", "2145", "5", "05/04/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 558, "42E9AA9D-EEBE-4027-81A3-8F855F37995E", 558, 1344444370, "393811", 1344444421, "393811", "{\n}", "04/25/2012", "Health-Rodents-Rats", "Health", "229201", [ "{\"address\":\"543 BROADWAY\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.3981169210341", "-71.10668336640344", null, false ], "Y", "2145", "5", "05/04/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 569, "CB25E650-778F-41EE-9B83-95EF195BEF21", 569, 1344444370, "393811", 1344444521, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "04/23/2012", "Health-Rodents-Rats", "Health", "229037", [ "{\"address\":\"SCHOOL ST &amp; SOMERVILLE AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", null, null, "05/04/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 570, "BE8DF65B-326E-46C5-B92B-16D5F7DD4168", 570, 1344444370, "393811", 1344444507, "393811", "{\n}", "04/23/2012", "Health-Rodents-Rats", "Health", "229001", [ "{\"address\":\"0 SARGENT AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.391740727846354", "-71.09187602919101", null, false ], "Y", "2145", "0", "04/30/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 571, "FAFFBE03-F135-4E71-BB72-C9CA9B98EF5D", 571, 1344444370, "393811", 1344444559, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "04/23/2012", "Health-Rodents-Rats", "Health", "228998", [ "{\"address\":\"PEARL ST &amp; MEDFORD ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2145", null, "04/30/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 572, "8ACEA569-7CBF-4572-940C-D668DA589D8E", 572, 1344444370, "393811", 1344444475, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "04/23/2012", "Health-Rodents-Rats", "Health", "228999", [ "{\"address\":\"DARTMOUTH ST &amp; BROADWAY\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2145", null, "04/30/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 573, "585BC6CC-9C06-4134-987C-7ADD3D8EA87B", 573, 1344444370, "393811", 1344444439, "393811", "{\n}", "04/23/2012", "Health-Rodents-Rats", "Health", "229002", [ "{\"address\":\"0 WALNUT RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39092684140985", "-71.09070691055291", null, false ], "Y", "2145", "0", "04/30/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 574, "859F0F86-32F3-4DF3-B530-43882C809DD1", 574, 1344444370, "393811", 1344444470, "393811", "{\n}", "04/23/2012", "Health-Rodents-Rats", "Health", "229005", [ "{\"address\":\"0 RICHDALE AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38873239339152", "-71.09749117794276", null, false ], "Y", "2145", "4", "04/30/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 575, "CCAFE72E-B63D-4EBE-9431-7B75406D78B3", 575, 1344444370, "393811", 1344444524, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "04/23/2012", "Health-Rodents-Rats", "Health", "229006", [ "{\"address\":\"MEDFORD ST &amp; SYCAMORE ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", null, null, "04/30/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 576, "CF5C7468-8069-4F19-BF9E-CEC46CDCB469", 576, 1344444370, "393811", 1344444526, "393811", "{\n}", "04/23/2012", "Health-Rodents-Rats", "Health", "229003", [ "{\"address\":\"0 BAILEY RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39431132558741", "-71.08622670556639", null, false ], "Y", "2145", "5", "04/30/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 577, "EAA663F3-69FA-4F47-AA78-4EFAFD6E067E", 577, 1344444370, "393811", 1344444548, "393811", "{\n}", "04/23/2012", "Health-Rodents-Rats", "Health", "229004", [ "{\"address\":\"0 JACKSON RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38896993818403", "-71.09229056744795", null, false ], "Y", "2145", "4", "04/30/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 578, "300C0564-5458-4F7D-8888-9854AD959548", 578, 1344444370, "393811", 1344444409, "393811", "{\n}", "04/23/2012", "Health-Rodents-Rats", "Health", "229000", [ "{\"address\":\"0 FREMONT ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.396897257268165", "-71.09930334117993", null, false ], "Y", "2145", "2", "04/30/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 579, "BF72C07C-BA0C-448F-851E-697CD48DAD30", 579, 1344444370, "393811", 1344444507, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "04/23/2012", "Health-Rodents-Rats", "Health", "229042", [ "{\"address\":\"SHORE DR &amp; BAILEY RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2145", null, "04/30/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 580, "347AFFFB-A03C-4810-9F8E-C317C158D11D", 580, 1344444370, "393811", 1344444412, "393811", "{\n}", "04/23/2012", "Health-Rodents-Rats", "Health", "229105", [ "{\"address\":\"9 RUSH ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38782867701889", "-71.08536044108871", null, false ], "Y", "2145", "1", "04/30/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 585, "BD699848-D4D3-49BB-8952-B000423829ED", 585, 1344444370, "393811", 1344444506, "393811", "{\n}", "04/22/2012", "Health-Rodents-Rats", "Health", "228980", [ "{\"address\":\"17 ALDRICH ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38594010075735", "-71.09112509529655", null, false ], "Y", "2145", "1", "04/23/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 586, "5B4668A9-CF38-4602-BE86-C619056F81B2", 586, 1344444370, "393811", 1344444439, "393811", "{\n}", "04/22/2012", "Health-Rodents-Rats", "Health", "228977", [ "{\"address\":\"17 ALDRICH ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38594010075735", "-71.09112509529655", null, false ], "Y", "2145", "1", "04/23/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 588, "1A3A68D9-9698-4203-88F2-8ADCBE9663D8", 588, 1344444370, "393811", 1344444391, "393811", "{\n}", "04/20/2012", "Health-Rodents-Rats", "Health", "228905", [ "{\"address\":\"6 WALNUT RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39011295497335", "-71.09184455291995", null, false ], "Y", "2145", "5", "04/30/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 589, "A526AA49-0C7D-471C-9565-595D29224CBE", 589, 1344444370, "393811", 1344444490, "393811", "{\n}", "04/20/2012", "Health-Rodents-Rats", "Health", "228958", [ "{\"address\":\"97 GILMAN ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.386335802450276", "-71.09277984783046", null, false ], "Y", "2145", "1", "04/30/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 590, "16A2F67C-DDDF-47F2-826D-5893E5D9B40E", 590, 1344444370, "393811", 1344444391, "393811", "{\n}", "04/20/2012", "Health-Rodents-Rats", "Health", "228896", [ "{\"address\":\"58 LOWDEN AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39841369730374", "-71.11483122398886", null, false ], "Y", "2144", "6", "04/30/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 594, "47B1565A-3E45-492D-898A-15FBDDED55AE", 594, 1344444370, "393811", 1344444424, "393811", "{\n}", "04/19/2012", "Health-Rodents-Rats", "Health", "228840", [ "{\"address\":\"17 MOUNT PLEASANT ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38529258889628", "-71.07851660044577", null, false ], "Y", "2145", "1", "05/16/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 595, "0A2AA11F-CA6A-4886-9DCE-F98E221A1C03", 595, 1344444370, "393811", 1344444384, "393811", "{\n}", "04/19/2012", "Health-Rodents-Rats", "Health", "228840", [ "{\"address\":\"17 MOUNT PLEASANT ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38529258889628", "-71.07851660044577", null, false ], "Y", "2145", "1", "05/16/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 601, "30135511-2467-45C6-BB8C-D84E39F0DC4C", 601, 1344444370, "393811", 1344444409, "393811", "{\n}", "04/18/2012", "Health-Rodents-Rats", "Health", "228796", [ "{\"address\":\"0 BONAIR ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38854363803219", "-71.08958725462642", null, false ], "Y", "2145", "1", "04/23/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 602, "57566CF7-26D7-4EAC-A302-E2B6F32B9152", 602, 1344444370, "393811", 1344444437, "393811", "{\n}", "04/18/2012", "Health-Rodents-Rats", "Health", "228820", [ "{\"address\":\"0 JOSEPHINE AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39557428735841", "-71.1150105409328", null, false ], "Y", "2144", "5", "04/23/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 609, "620498A9-F011-41BF-9407-64A806096E42", 609, 1344444370, "393811", 1344444444, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "04/17/2012", "Health-Rodents-Rats", "Health", "228687", [ "{\"address\":\"MILLER ST &amp; SACRAMENTO ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2143", null, "04/23/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 612, "332660A2-CCF6-4D0B-8DEC-A25E474C0AB4", 612, 1344444370, "393811", 1344444410, "393811", "{\n}", "04/17/2012", "Health-Rodents-Rats", "Health", "228482", [ "{\"address\":\"2 MAIN ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.394869310010066", "-71.09747821422827", null, false ], "Y", "2145", "1", "04/23/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 613, "01C734BC-19E6-42DF-9124-E200F209AD05", 613, 1344444370, "393811", 1344444382, "393811", "{\n}", "04/17/2012", "Health-Rodents-Rats", "Health", "228487", [ "{\"address\":\"91 GILMAN ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.386172909920404", "-71.09248724808148", null, false ], "Y", "2145", "1", "04/30/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 614, "726B2D2E-9680-4FC8-9A47-12019BBCEAC2", 614, 1344444370, "393811", 1344444458, "393811", "{\n}", "04/17/2012", "Health-Rodents-Rats", "Health", "228472", [ "{\"address\":\"0 VIRGINIA ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38601799895308", "-71.09088239283099", null, false ], "Y", "2145", "1", "04/23/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 625, "D8487B8D-DE3D-4C74-A729-532036B418D7", 625, 1344444370, "393811", 1344444532, "393811", "{\n}", "04/12/2012", "Health-Rodents-Rats", "Health", "228244", [ "{\"address\":\"145 COLLEGE AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.40078810240219", "-71.11692806345943", null, false ], "Y", "2144", "6", "04/23/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 629, "6508FEF3-F082-41A7-AC6D-1C1EB8AABD7B", 629, 1344444370, "393811", 1344444447, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "04/11/2012", "Health-Rodents-Rats", "Health", "228225", [ "{\"address\":\"BRADLEY ST &amp; JACKSON RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2145", null, "04/23/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 639, "60E36551-2562-4BCD-A64C-9FFB314FA7AF", 639, 1344444370, "393811", 1344444443, "393811", "{\n}", "04/07/2012", "Health-Rodents-Rats", "Health", "228045", [ "{\"address\":\"162 WALNUT ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38987913124572", "-71.09161972241264", null, false ], "Y", "2145", "4", "04/13/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 640, "D59C9911-218D-46DB-A1ED-4863AB410B8F", 640, 1344444370, "393811", 1344444531, "393811", "{\n}", "04/06/2012", "Health-Rodents-Rats", "Health", "228043", [ "{\"address\":\"56 BRADLEY ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38967228717894", "-71.09358923765683", null, false ], "Y", "2145", "4", "04/23/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 644, "2C0D5151-E9E8-46C2-93FC-B670319AC55A", 644, 1344444370, "393811", 1344444405, "393811", "{\n}", "04/05/2012", "Health-Rodents-Rats", "Health", "228001", [ "{\"address\":\"6 MILLER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38405152449582", "-71.11261889179679", null, false ], "Y", "2143", "2", "04/17/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 649, "420D5DED-84FA-412B-903A-962DD2FD7AA2", 649, 1344444370, "393811", 1344444420, "393811", "{\n}", "04/03/2012", "Health-Rodents-Rats", "Health", "227665", [ "{\"address\":\"60 MORELAND ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39800900239055", "-71.09702464780872", null, false ], "Y", "2145", "4", "04/17/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 664, "E00BA588-2ED1-4534-89E1-D17253FFE140", 664, 1344444370, "393811", 1344444538, "393811", "{\n}", "03/30/2012", "Health-Rodents-Rats", "Health", "227486", [ "{\"address\":\"18 MILLER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.383995280859224", "-71.11259235176652", null, false ], "Y", "2143", "2", "04/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 665, "6C217FF5-D10D-4511-A83A-DE5149573207", 665, 1344444370, "393811", 1344444453, "393811", "{\n}", "03/30/2012", "Health-Rodents-Rats", "Health", "227398", [ "{\"address\":\"12 MONTGOMERY AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.390005036329796", "-71.09050456309632", null, false ], "Y", "2145", "1", "04/13/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 666, "DDD546D3-E8B3-4509-9ADE-1C90C3423C82", 666, 1344444370, "393811", 1344444537, "393811", "{\n}", "03/30/2012", "Health-Rodents-Rats", "Health", "227408", [ "{\"address\":\"12 MONTGOMERY AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.390005036329796", "-71.09050456309632", null, false ], "Y", "2145", "1", "04/13/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 670, "D462A036-0A90-4008-94A4-8BFCCF4496DE", 670, 1344444370, "393811", 1344444530, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "03/29/2012", "Health-Rodents-Rats", "Health", "227349", [ "{\"address\":\"ROGERS AVE &amp; BOSTON AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2144", null, "04/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 680, "88799689-759E-44A9-B388-8380C58A40DE", 680, 1344444370, "393811", 1344444474, "393811", "{\n}", "03/28/2012", "Health-Rodents-Rats", "Health", "227291", [ "{\"address\":\"0 CENTRAL ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.390404126623125", "-71.10208382668326", null, false ], "Y", "2145", "0", "04/13/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 682, "2D1593AB-5D94-4869-90B2-D59A5316AE3B", 682, 1344444370, "393811", 1344444405, "393811", "{\n}", "03/28/2012", "Health-Rodents-Rats", "Health", "227247", [ "{\"address\":\"ARGENZIANO SCHOOL\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2143", "2", "04/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 694, "31BF308C-974D-4DD3-8F9D-F403CDB4C733", 694, 1344444370, "393811", 1344444409, "393811", "{\n}", "03/23/2012", "Health-Rodents-Rats", "Health", "226740", [ "{\"address\":\"0 WALNUT ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39092684140985", "-71.09070691055291", null, false ], "Y", "2145", "0", "04/23/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 695, "C1821392-5753-4BA2-AFA5-55F2B19095F6", 695, 1344444370, "393811", 1344444511, "393811", "{\n}", "03/23/2012", "Health-Rodents-Rats", "Health", "226739", [ "{\"address\":\"9 RADCLIFFE RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38844920921912", "-71.09322051562481", null, false ], "Y", "2145", "4", "03/27/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 703, "93E1E533-A501-40AB-8F03-55E4813CD4F7", 703, 1344444370, "393811", 1344444481, "393811", "{\n}", "03/22/2012", "Health-Rodents-Rats", "Health", "226723", [ "{\"address\":\"98 ELM ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.38954638209486", "-71.11695362397802", null, false ], "Y", "2144", "5", "04/13/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 704, "A4739469-BEF3-4839-8C60-B7644FB8C744", 704, 1344444370, "393811", 1344444489, "393811", "{\n}", "03/22/2012", "Health-Rodents-Rats", "Health", "226723", [ "{\"address\":\"98 ELM ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.38954638209486", "-71.11695362397802", null, false ], "Y", "2144", "5", "04/13/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 705, "AF41D57D-4871-4362-AEA1-0E67FF918D02", 705, 1344444370, "393811", 1344444495, "393811", "{\n}", "03/22/2012", "Health-Rodents-Rats", "Health", "226726", [ "{\"address\":\"0 BONAIR ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38854363803219", "-71.08958725462642", null, false ], "Y", "2145", "1", "04/23/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 706, "60859384-482A-4FA7-9096-5B1045C211C9", 706, 1344444370, "393811", 1344444443, "393811", "{\n}", "03/22/2012", "Health-Rodents-Rats", "Health", "226727", [ "{\"address\":\"20 MOUNT VERNON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38540050753977", "-71.07935296993298", null, false ], "Y", "2145", "1", "04/13/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 729, "A49BF363-A1AD-4075-AB68-7DB2CF9A1421", 729, 1344444370, "393811", 1344444489, "393811", "{\n}", "03/19/2012", "Health-Rodents-Rats", "Health", "226420", [ "{\"address\":\"143 BAILEY RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39699543955844", "-71.08958773926999", null, false ], "Y", "2145", "4", "03/27/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 730, "28549475-256E-4FA6-A8CF-F1D8EA670314", 730, 1344444370, "393811", 1344444403, "393811", "{\n}", "03/19/2012", "Health-Rodents-Rats", "Health", "226363", [ "{\"address\":\"0 CEDAR ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39447466681543", "-71.11074830197586", null, false ], "Y", "2145", "0", "03/27/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 731, "B5DA4F82-4D73-476A-A439-F3998A94A59D", 731, 1344444370, "393811", 1344444500, "393811", "{\n}", "03/19/2012", "Health-Rodents-Rats", "Health", "226390", [ "{\"address\":\"4 PRESCOTT ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38387985407461", "-71.09975502285398", null, false ], "Y", "2143", "3", "03/27/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 732, "0F5B6A90-DB5D-4B02-81BE-4993A83FBC38", 732, 1344444370, "393811", 1344444387, "393811", "{\n}", "03/19/2012", "Health-Rodents-Rats", "Health", "226384", [ "{\"address\":\"76 MORELAND ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39849463628639", "-71.09657498679411", null, false ], "Y", "2145", "4", "03/27/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 739, "A2590CE9-8526-424F-BBCC-2CEBC0E01D32", 739, 1344444370, "393811", 1344444488, "393811", "{\n}", "03/17/2012", "Health-Rodents-Rats", "Health", "226348", [ "{\"address\":\"17 ALDRICH ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38594010075735", "-71.09112509529655", null, false ], "Y", "2145", "1", "04/11/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 740, "B53B6704-D1D9-4FA1-B9AD-0728E2B3D4DC", 740, 1344444370, "393811", 1344444499, "393811", "{\n}", "03/16/2012", "Health-Rodents-Rats", "Health", "226328", [ "{\"address\":\"16 MILLER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38427635500318", "-71.11292466128674", null, false ], "Y", "2143", "2", "03/27/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 753, "C2D4D0BD-BCDF-45B9-9317-9B311AC99FC6", 753, 1344444370, "393811", 1344444513, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "03/14/2012", "Health-Rodents-Rats", "Health", "226075", [ "{\"address\":\"LINCOLN ST &amp; PERKINS ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2145", null, "03/27/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 754, "99E4630C-0C70-4BC9-9911-6234AA2E70E7", 754, 1344444370, "393811", 1344444483, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "03/14/2012", "Health-Rodents-Rats", "Health", "226016", [ "{\"address\":\"LINCOLN ST &amp; PERKINS ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2145", null, "03/27/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 758, "FAFFDCEE-F114-45A7-8CC6-66BD747F9412", 758, 1344444370, "393811", 1344444559, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "03/13/2012", "Health-Rodents-Rats", "Health", "226007", [ "{\"address\":\"MORELAND ST &amp; MEACHAM ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2145", null, "03/27/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 759, "8B7EAE59-FC29-41C6-9D36-807A1D2953AF", 759, 1344444370, "393811", 1344444476, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "03/13/2012", "Health-Rodents-Rats", "Health", "226007", [ "{\"address\":\"MORELAND ST &amp; MEACHAM ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2145", null, "03/27/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 760, "C5D090A6-4996-438E-BB7B-4A55285A8FB7", 760, 1344444370, "393811", 1344444516, "393811", "{\n}", "03/13/2012", "Health-Rodents-Rats", "Health", "225934", [ "{\"address\":\"6 CUTTER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38716317871723", "-71.08347186482717", null, false ], "Y", "2145", "1", "03/27/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 768, "04C0FD82-44E9-429C-8FD9-7CFB6D204EAA", 768, 1344444370, "393811", 1344444383, "393811", "{\n}", "03/12/2012", "Health-Rodents-Rats", "Health", "225836", [ "{\"address\":\"20 MOUNT VERNON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38540050753977", "-71.07935296993298", null, false ], "Y", "2145", "1", "04/13/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 769, "9661C02E-BB15-4DF2-99BA-60AC4522766B", 769, 1344444370, "393811", 1344444482, "393811", "{\n}", "03/12/2012", "Health-Rodents-Rats", "Health", "225909", [ "{\"address\":\"0 MILLER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.383842734330294", "-71.11237022261035", null, false ], "Y", "2143", "2", "03/27/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 774, "37201F15-9767-46E3-87C2-0673D18ADFE9", 774, 1344444370, "393811", 1344444413, "393811", "{\n}", "03/11/2012", "Health-Rodents-Rats", "Health", "225812", [ "{\"address\":\"6 MILLER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38405152449582", "-71.11261889179679", null, false ], "Y", "2143", "2", "03/27/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 780, "2F480C17-11EC-4616-9ACD-A0DCA8E869D0", 780, 1344444370, "393811", 1344444407, "393811", "{\n}", "03/09/2012", "Health-Rodents-Rats", "Health", "225770", [ "{\"address\":\"6 CUTTER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38716317871723", "-71.08347186482717", null, false ], "Y", "2145", "1", "03/27/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 781, "9B1B0D55-38F1-444A-ACEF-E4E38436CE82", 781, 1344444370, "393811", 1344444484, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "03/09/2012", "Health-Rodents-Rats", "Health", "225772", [ "{\"address\":\"BROADWAY &amp; MOUNT VERNON ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", null, null, "03/27/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 783, "FD83EA85-638A-480B-B02F-32DD9E34679A", 783, 1344444370, "393811", 1344444560, "393811", "{\n}", "03/08/2012", "Health-Rodents-Rats", "Health", "225750", [ "{\"address\":\"102 BROADWAY\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.387507784652215", "-71.08347003189448", null, false ], "Y", "2145", "5", "03/27/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 785, "24A3B2DF-6AB4-41C3-8ED1-B3A28D183426", 785, 1344444370, "393811", 1344444399, "393811", "{\n}", "03/08/2012", "Health-Rodents-Rats", "Health", "225627", [ "{\"address\":\"0 MORELAND ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39627171724047", "-71.09866635817497", null, false ], "Y", "2145", "0", "04/13/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 798, "76E05A9B-DE98-4709-B26E-524AE4A38A8C", 798, 1344444370, "393811", 1344444460, "393811", "{\n}", "03/06/2012", "Health-Rodents-Rats", "Health", "225516", [ "{\"address\":\"0 WELLINGTON AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.390096372974654", "-71.09136269791078", null, false ], "Y", "2145", "1", "03/08/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 805, "2B40EF64-94BE-4D20-B4BF-0C4B8B4B2FAA", 805, 1344444370, "393811", 1344444405, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "03/05/2012", "Health-Rodents-Rats", "Health", "225330", [ "{\"address\":\"CUTTER ST &amp; BROADWAY\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2145", null, "03/22/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 806, "03D1866E-855D-4CBA-A2EA-6422B4684A15", 806, 1344444370, "393811", 1344444383, "393811", "{\n}", "03/03/2012", "Health-Rodents-Rats", "Health", "225301", [ "{\"address\":\"67 FREMONT ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39876443289518", "-71.09748330204366", null, false ], "Y", "2145", "4", "03/08/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 808, "6EDFD57B-398A-46B9-AD2F-AAE23EE8652F", 808, 1344444370, "393811", 1344444456, "393811", "{\n}", "03/02/2012", "Health-Rodents-Rats", "Health", "225289", [ "{\"address\":\"165 WALNUT ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38996007022837", "-71.09146683766767", null, false ], "Y", "2145", "1", "03/08/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 809, "D6145E3B-23C5-44E6-A8AC-59073A69F663", 809, 1344444370, "393811", 1344444531, "393811", "{\n}", "03/02/2012", "Health-Rodents-Rats", "Health", "225291", [ "{\"address\":\"DAVIS SQUARE STATUE PARK\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2144", "6", "03/12/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 815, "3B7AE749-460E-4C93-946B-F716191C62D6", 815, 1344444370, "393811", 1344444415, "393811", "{\n}", "02/29/2012", "Health-Rodents-Rats", "Health", "225056", [ "{\"address\":\"DAVIS SQUARE STATUE PARK\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2144", "6", "03/12/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 816, "635B7CD4-3B12-42ED-8F33-AF3C108A336B", 816, 1344444370, "393811", 1344444445, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "02/29/2012", "Health-Rodents-Rats", "Health", "225023", [ "{\"address\":\"SCHOOL ST &amp; LANDERS ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", null, null, "03/08/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 824, "1F6E5DB6-F907-4A14-B94E-DFB92157F063", 824, 1344444370, "393811", 1344444394, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "02/27/2012", "Health-Rodents-Rats", "Health", "224684", [ "{\"address\":\"BEACON ST &amp; BUCKINGHAM ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2143", null, "03/08/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 828, "F6EDAA1B-E81E-4E5E-86B1-E8E98E3400E2", 828, 1344444370, "393811", 1344444556, "393811", "{\n}", "02/25/2012", "Health-Rodents-Rats", "Health", "224595", [ "{\"address\":\"6 MILLER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38405152449582", "-71.11261889179679", null, false ], "Y", "2143", "2", "03/08/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 840, "C9B659C8-3699-4867-86BE-151E57274BFA", 840, 1344444370, "393811", 1344444520, "393811", "{\n}", "02/21/2012", "Health-Rodents-Rats", "Health", "224186", [ "{\"address\":\"20 RADCLIFFE RD\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.388683032946744", "-71.09380507494382", null, false ], "Y", "2145", "5", "02/23/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 863, "6AA31D53-E5AD-4FA4-BE5B-6DCF298B2929", 863, 1344444370, "393811", 1344444452, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "02/13/2012", "Health-Rodents-Rats", "Health", "223524", [ "{\"address\":\"PEARL ST &amp; JAMES ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2145", null, "02/16/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 877, "3F4D776D-E38B-4E5D-B017-E079161BD9B6", 877, 1344444370, "393811", 1344444418, "393811", "{\n}", "02/06/2012", "Health-Rodents-Rats", "Health", "223106", [ "{\"address\":\"102 MORRISON AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39553586681001", "-71.1153168578847", null, false ], "Y", "2144", "6", "02/16/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 880, "4CC03E2C-6947-49D7-A029-0D64A5233B2F", 880, 1344444370, "393811", 1344444426, "393811", "{\n}", "02/05/2012", "Health-Rodents-Rats", "Health", "223100", [ "{\"address\":\"236 ELM ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.394969293931524", "-71.12164808497096", null, false ], "Y", "2144", "6", "02/10/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 885, "09178CAD-C730-4A1F-B929-34E3E8012F0B", 885, 1344444370, "393811", 1344444384, "393811", "{\n}", "02/02/2012", "Health-Rodents-Rats", "Health", "222943", [ "{\"address\":\"56 WHITE ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.38945644989195", "-71.11725939346798", null, false ], "Y", "2144", "7", "02/10/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 909, "8928878B-C26D-4FF6-8DED-48D3CF1B9CB3", 909, 1344444370, "393811", 1344444475, "393811", "{\n}", "01/30/2012", "Health-Rodents-Rats", "Health", "222610", [ "{\"address\":\"0 MELVIN ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39000957600526", "-71.08923415832554", null, false ], "Y", "2145", "1", "02/16/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 913, "E27F28F5-51C5-4491-8FE7-27CB541D944A", 913, 1344444370, "393811", 1344444539, "393811", "{\n}", "01/26/2012", "Health-Rodents-Rats", "Health", "222473", [ "{\"address\":\"12 SUNNYSIDE AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.388422229558216", "-71.09196146478376", null, false ], "Y", "2145", "1", "02/10/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 920, "444241B6-AA5A-4DF9-98A4-EBC6963432BD", 920, 1344444370, "393811", 1344444423, "393811", "{\n}", "01/24/2012", "Health-Rodents-Rats", "Health", "222312", [ "{\"address\":\"62 SUMMER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38416843635963", "-71.10026220711421", null, false ], "Y", "2143", "2", "02/10/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 921, "C6D3D5BB-D930-46B7-9EC4-2408D6BE3C2E", 921, 1344444370, "393811", 1344444517, "393811", "{\n}", "01/24/2012", "Health-Rodents-Rats", "Health", "222312", [ "{\"address\":\"62 SUMMER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38416843635963", "-71.10026220711421", null, false ], "Y", "2143", "2", "02/10/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 922, "A5DB7420-CE38-4ED9-9118-6B6BB1AA5A38", 922, 1344444370, "393811", 1344444490, "393811", "{\n}", "01/24/2012", "Health-Rodents-Rats", "Health", "222308", [ "{\"address\":\"CENTRAL LIBRARY\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2143", "3", "02/10/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 924, "8AB735CD-6824-4A54-AA68-C5F1D5C905E8", 924, 1344444370, "393811", 1344444475, "393811", "{\n}", "01/23/2012", "Health-Rodents-Rats", "Health", "222149", [ "{\"address\":\"14 JAMES ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38817041939001", "-71.09367017663942", null, false ], "Y", "2145", "4", "02/10/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 925, "92B1872D-62CB-44E3-BFD0-95B1423D7EFF", 925, 1344444370, "393811", 1344444481, "393811", "{\n}", "01/23/2012", "Health-Rodents-Rats", "Health", "222091", [ "{\"address\":\"12 MAIN ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.39518513121857", "-71.09766316644954", null, false ], "Y", "2145", "2", "02/10/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 942, "8B04A150-5261-4276-8A75-34842EC877A4", 942, 1344444370, "393811", 1344444476, "393811", "{\n}", "01/16/2012", "Health-Rodents-Rats", "Health", "221607", [ "{\"address\":\"11 MELVIN ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38966329395868", "-71.08966819360904", null, false ], "Y", "2145", "1", "02/16/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 943, "1B2E39CA-656A-41AF-BB74-65172EDB3EC6", 943, 1344444370, "393811", 1344444392, "393811", "{\n}", "01/16/2012", "Health-Rodents-Rats", "Health", "221616", [ "{\"address\":\"32 MOUNT PLEASANT ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38495983974542", "-71.078678478411", null, false ], "Y", "2145", "1", "02/10/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 946, "84E581EC-163F-44BA-9AE8-A5CD44E25D59", 946, 1344444370, "393811", 1344444469, "393811", "{\n}", "01/13/2012", "Health-Rodents-Rats", "Health", "221587", [ "{\"address\":\"42 LOWDEN AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.398917317640155", "-71.11448048839748", null, false ], "Y", "2144", "6", "02/16/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 948, "A9C01F1F-08E4-4A69-AC7B-1C9B075CD660", 948, 1344444370, "393811", 1344444492, "393811", "{\n}", "01/12/2012", "Health-Rodents-Rats", "Health", "221515", [ "{\"address\":\"14 MILLER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38417742957995", "-71.11278976298235", null, false ], "Y", "2143", "2", "02/16/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 949, "43EB41F6-CAE2-49EA-ACDC-29D9B5D54BB0", 949, 1344444370, "393811", 1344444423, "393811", "{\n}", "01/12/2012", "Health-Rodents-Rats", "Health", "221521", [ "{\"address\":\"18 GRAND VIEW AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.385094738049816", "-71.09592747493298", null, false ], "Y", "2143", "3", "02/16/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 950, "DCBBB055-DA8E-473F-816E-42FEA6F124B6", 950, 1344444370, "393811", 1344444536, "393811", "{\n}", "01/12/2012", "Health-Rodents-Rats", "Health", "221521", [ "{\"address\":\"18 GRAND VIEW AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.385094738049816", "-71.09592747493298", null, false ], "Y", "2143", "3", "02/16/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 953, "AE5C57C5-A8A1-43A1-B243-B1A8D5FEFDB5", 953, 1344444370, "393811", 1344444495, "393811", "{\n}", "01/11/2012", "Health-Rodents-Rats", "Health", "221416", [ "{\"address\":\"102 MORRISON AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39553586681001", "-71.1153168578847", null, false ], "Y", "2144", "6", "03/27/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 954, "E40FBBBE-5F94-42E1-BD42-C9AB0CA3F239", 954, 1344444370, "393811", 1344444542, "393811", "{\n}", "01/11/2012", "Health-Rodents-Rats", "Health", "221336", [ "{\"address\":\"102 MORRISON AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39553586681001", "-71.1153168578847", null, false ], "Y", "2144", "6", "02/10/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 955, "47B101B9-1708-42F8-B77E-1BBAA21EF8F4", 955, 1344444370, "393811", 1344444424, "393811", "{\n}", "01/11/2012", "Health-Rodents-Rats", "Health", "221353", [ "{\"address\":\"351 HIGHLAND AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39422285664722", "-71.11698060363892", null, false ], "Y", "2144", "6", "02/23/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 967, "2EFF750F-265A-4FD2-B0E3-53C220371397", 967, 1344444370, "393811", 1344444407, "393811", "{\n}", "01/09/2012", "Health-Rodents-Rats", "Health", "221076", [ "{\"address\":\"62 SUMMER ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38416843635963", "-71.10026220711421", null, false ], "Y", "2143", "2", "02/10/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 968, "ED541CCE-71C2-4895-9988-F79BDB8E5E79", 968, 1344444370, "393811", 1344444551, "393811", "{\n}", "01/08/2012", "Health-Rodents-Rats", "Health", "221023", [ "{\"address\":\"0 WESLEY ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38687657703204", "-71.09147416206535", null, false ], "Y", "2145", "1", "03/01/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 976, "8EDC3FBD-D39B-4C40-AEA4-D4C2B4E3C2BF", 976, 1344444370, "393811", 1344444479, "393811", "{\n}", "01/04/2012", "Health-Rodents-Rats", "Health", "220844", [ "{\"address\":\"102 MORRISON AVE\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2144\"}", "42.39553586681001", "-71.1153168578847", null, false ], "Y", "2144", "6", "02/10/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 982, "A8462D24-07FE-4648-A278-49680FFE6840", 982, 1344444370, "393811", 1344444491, "393811", "{\n  \"invalidCells\" : {\n    \"3741137\" : \"-\"\n  }\n}", "01/03/2012", "Health-Rodents-Rats", "Health", "220783", [ "{\"address\":\"MILLER ST &amp; SACRAMENTO ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2143\"}", "42.38667999988223", "-71.09825999969905", null, false ], "Y", "2143", null, "02/16/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+, [ 983, "ECE2891F-0BDE-42D8-BD8A-8ECE868F3BBE", 983, 1344444370, "393811", 1344444550, "393811", "{\n}", "01/03/2012", "Health-Rodents-Rats", "Health", "220738", [ "{\"address\":\"88 CROSS ST\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"2145\"}", "42.38506775838897", "-71.08824726480276", null, false ], "Y", "2145", "1", "02/10/2012", [ "{\"address\":\"\",\"city\":\"Somerville\",\"state\":\"MA\",\"zip\":\"\"}", "42.38667999988223", "-71.09825999969905", null, false ] ]
+ ]
+}
